@@ -1,3 +1,4 @@
+
 import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -268,7 +269,7 @@ const Index = () => {
       </section>
 
       {/* What You Get */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
             What You Get
@@ -277,7 +278,7 @@ const Index = () => {
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
-                <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-blue-200 transition-colors">
+                <div key={index} className="border border-gray-200 bg-white rounded-lg p-6 hover:border-blue-200 transition-colors">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <IconComponent className="h-6 w-6 text-blue-600" />
@@ -300,7 +301,7 @@ const Index = () => {
           </div>
           
           {/* Pricing highlight */}
-          <div className="text-center bg-blue-50 border border-blue-200 rounded-lg p-8">
+          <div className="text-center bg-blue-50 border border-blue-200 rounded-lg p-8 mb-8">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Zap className="h-6 w-6 text-blue-600" />
               <h3 className="text-2xl font-bold text-gray-900">All this: ₹39,999 / $500</h3>
@@ -310,37 +311,35 @@ const Index = () => {
             </p>
           </div>
           
-          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mt-8">
+          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mb-8">
             We don't file your visa. We make you credible enough that lawyers want to.
           </p>
-        </div>
-      </section>
 
-      {/* Why It Works */}
-      <section className="px-6 py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-            "Most lawyers file the papers. We give you the proof to win."
-          </blockquote>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">We run the events — judging is real</p>
+          {/* Why It Works Quote */}
+          <div className="text-center mb-8">
+            <blockquote className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              "Most lawyers file the papers. We give you the proof to win."
+            </blockquote>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg text-gray-700">We run the events — judging is real</p>
+                </div>
+                <div className="flex items-start">
+                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg text-gray-700">We issue awards — not Fiverr PDFs</p>
+                </div>
               </div>
-              <div className="flex items-start">
-                <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">We issue awards — not Fiverr PDFs</p>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">We get you published — real articles, no fluff</p>
-              </div>
-              <div className="flex items-start">
-                <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                <p className="text-lg text-gray-700">You get a complete, structured proof portfolio</p>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg text-gray-700">We get you published — real articles, no fluff</p>
+                </div>
+                <div className="flex items-start">
+                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <p className="text-lg text-gray-700">You get a complete, structured proof portfolio</p>
+                </div>
               </div>
             </div>
           </div>
