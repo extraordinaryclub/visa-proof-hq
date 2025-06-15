@@ -1,4 +1,4 @@
-import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe } from "lucide-react";
+import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -82,6 +82,39 @@ const Index = () => {
     }
   ];
 
+  const liveFeatures = [
+    "Judging invites from real Maximally events",
+    "Blog feature or podcast-style interview", 
+    "2–3 Letters of Recommendation via mentors / event leads",
+    "Notion-based visa portfolio template (editable + exportable)",
+    "Access to private Discord (founder visa prep community)"
+  ];
+
+  const comingSoonFeatures = [
+    "Public press drops via Maximally Studios",
+    "Ghostwritten story upgrades",
+    "Custom award generator", 
+    "Public credibility leaderboard",
+    "Lawyer matchmaking partner network"
+  ];
+
+  const targetAudience = [
+    "Startup founders building in tech, AI, sustainability, etc.",
+    "Researchers with publications or niche domain work",
+    "Creators or artists with a portfolio but no proof",
+    "Builders aiming for O-1 or EB-1 within the next 12 months",
+    "Anyone tired of overpriced agencies and unclear steps"
+  ];
+
+  const timeline = [
+    { day: "Day 1", action: "You join and fill your intake form" },
+    { day: "Day 3", action: "You're assigned to judge a real Maximally event" },
+    { day: "Day 5", action: "You get your first draft LOR + event certificate" },
+    { day: "Day 10", action: "We publish your feature article on Substack" },
+    { day: "Day 14–18", action: "You receive a full Notion + PDF visa portfolio" },
+    { day: "Bonus", action: "You get tagged for a future podcast episode" }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -123,6 +156,113 @@ const Index = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What's Actually Live Right Now */}
+      <section className="px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+            What's Actually Live Right Now
+          </h2>
+          
+          <div className="bg-green-50 border border-green-200 rounded-lg p-8 mb-8">
+            <div className="flex items-center mb-6">
+              <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+              <h3 className="text-2xl font-bold text-gray-900">What's Included Right Now (Live & Working)</h3>
+            </div>
+            <div className="space-y-3">
+              {liveFeatures.map((feature, index) => (
+                <div key={index} className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700">{feature}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 mb-8">
+            <div className="flex items-center mb-6">
+              <Clock className="h-6 w-6 text-blue-600 mr-3" />
+              <h3 className="text-2xl font-bold text-gray-900">Coming Soon (you'll be first in line):</h3>
+            </div>
+            <div className="space-y-3">
+              {comingSoonFeatures.map((feature, index) => (
+                <div key={index} className="flex items-start">
+                  <div className="w-5 h-5 border-2 border-blue-400 rounded mr-3 mt-0.5 flex-shrink-0 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  </div>
+                  <p className="text-gray-700">{feature}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="text-lg text-gray-600 text-center font-medium">
+            We'll always be clear on what's live vs coming up.
+          </p>
+        </div>
+      </section>
+
+      {/* Who This Is For */}
+      <section className="px-6 py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center mb-16">
+            <Target className="h-8 w-8 text-blue-600 mr-4" />
+            <h2 className="text-4xl font-bold text-gray-900">Who Is This For?</h2>
+          </div>
+          
+          <div className="space-y-4 mb-12">
+            {targetAudience.map((audience, index) => (
+              <div key={index} className="flex items-start">
+                <Check className="h-6 w-6 text-green-600 mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-lg text-gray-700">{audience}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center bg-white border border-gray-200 rounded-lg p-8">
+            <p className="text-xl text-gray-800 font-medium">
+              If you've built something real, we help you prove it — in USCIS language.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What a Typical Member Gets */}
+      <section className="px-6 py-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center mb-16">
+            <Calendar className="h-8 w-8 text-blue-600 mr-4" />
+            <h2 className="text-4xl font-bold text-gray-900">What a Typical Member Gets</h2>
+          </div>
+          
+          <div className="space-y-6 mb-12">
+            {timeline.map((item, index) => (
+              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-6">
+                <div className="w-20 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-6">
+                  <span className="text-sm font-bold text-blue-600">{item.day}</span>
+                </div>
+                <div className="flex-1">
+                  <p className="text-lg text-gray-800">{item.action}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center bg-blue-600 text-white rounded-lg p-8 mb-8">
+            <h3 className="text-2xl font-bold mb-2">By Week 3 — you're visa-proofed.</h3>
+          </div>
+
+          <div className="text-center">
+            <p className="text-lg text-gray-700 mb-6">
+              Still have questions?<br />
+              → Fill this 1-minute form and we'll get back personally
+            </p>
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+              Contact Us
+            </Button>
           </div>
         </div>
       </section>
