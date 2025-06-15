@@ -1,5 +1,5 @@
 
-import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar } from "lucide-react";
+import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -34,31 +34,31 @@ const Index = () => {
   const features = [
     {
       icon: Zap,
-      title: "Judging Invite",
+      title: "🧠 Judging Invite",
       description: "Earn a real judging certificate from Maximally-run hackathons. Public listing included.",
       criteria: "✅ USCIS Criteria #3"
     },
     {
       icon: Newspaper,
-      title: "Press Feature", 
+      title: "📰 Press Feature", 
       description: "Get published in a podcast-style builder article on your story.",
       criteria: "✅ USCIS Criteria #2"
     },
     {
       icon: PenLine,
-      title: "Letters of Recommendation",
+      title: "✍️ Letters of Recommendation",
       description: "Receive 2–3 expert letters based on your actual projects and mentorships.",
       criteria: "✅ USCIS Criteria #6"
     },
     {
       icon: Folder,
-      title: "Notion Visa Portfolio",
+      title: "📁 Notion Visa Portfolio",
       description: "We bundle your story, assets, and proof into a USCIS-friendly format.",
       criteria: "✅ Critical supporting doc"
     },
     {
       icon: Globe,
-      title: "Private Discord Club",
+      title: "🌐 Private Discord Club",
       description: "Swap judging, get peer validation, and build with visa-ready founders.",
       criteria: "✅ Peer proof + support"
     }
@@ -66,19 +66,19 @@ const Index = () => {
 
   const steps = [
     {
-      title: "Join the Club",
+      title: "🔓 Join the Club",
       description: "Pay once, get lifetime access"
     },
     {
-      title: "We Build Your Proof", 
+      title: "🚀 We Build Your Proof", 
       description: "Judging spots, awards, press, LORs"
     },
     {
-      title: "Portfolio Delivered",
+      title: "📦 Portfolio Delivered",
       description: "Notion + PDF export"
     },
     {
-      title: "You Apply With Confidence",
+      title: "🎯 You Apply With Confidence",
       description: "Use it with your lawyer or solo"
     }
   ];
@@ -119,33 +119,46 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="px-6 py-20 max-w-6xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-          Visa Proof. <span className="text-blue-600">As a Service.</span>
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-          ExtraordinaryProof helps ambitious founders, creators, and researchers build O-1 / EB-1 visa portfolios — judging invites, LORs, press features, awards, and proof, all in one place.
+      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
+        <div className="mb-8">
+          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+            And make your visa application impossible to ignore.
+          </h2>
+        </div>
+        <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed">
+          Judging invites. LORs. Press. All built for you.
+        </p>
+        <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium">
+          Use it to apply for O-1 / EB-1 like a goddamn founder.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" variant="outline" className="text-lg px-8 py-4">
+          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-50">
             Join Waitlist
           </Button>
-          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700">
+          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
             Get Started – $500
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
+        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
       </section>
+
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* How It Works */}
       <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            How It Works
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            🛠️ How It Works
           </h2>
+          <p className="text-center text-gray-600 mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {index + 1}
                 </div>
@@ -161,16 +174,20 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
       {/* What's Actually Live Right Now */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-yellow-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            What's Actually Live Right Now
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            🟢 What's Actually Live Right Now
           </h2>
+          <p className="text-center text-gray-600 mb-16">⏳ Most members complete their portfolio in 18 days or less.</p>
           
-          <div className="bg-green-50 border border-green-200 rounded-lg p-8 mb-8">
+          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8 shadow-sm">
             <div className="flex items-center mb-6">
-              <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+              <div className="w-4 h-4 bg-green-500 rounded-full mr-3 animate-pulse"></div>
               <h3 className="text-2xl font-bold text-gray-900">What's Included Right Now (Live & Working)</h3>
             </div>
             <div className="space-y-3">
@@ -183,7 +200,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 mb-8">
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 mb-8 shadow-sm">
             <div className="flex items-center mb-6">
               <Clock className="h-6 w-6 text-blue-600 mr-3" />
               <h3 className="text-2xl font-bold text-gray-900">Coming Soon (you'll be first in line):</h3>
@@ -200,50 +217,57 @@ const Index = () => {
             </div>
           </div>
 
-          <p className="text-lg text-gray-600 text-center font-medium">
-            We'll always be clear on what's live vs coming up.
+          <p className="text-lg text-gray-600 text-center font-medium bg-white rounded-lg p-4 border border-gray-200">
+            👀 Our judging invites are real. Our awards are earned.
           </p>
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
+
       {/* Who This Is For */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-16">
+          <div className="flex items-center justify-center mb-4">
             <Target className="h-8 w-8 text-blue-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-900">Who Is This For?</h2>
+            <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
           </div>
+          <p className="text-center text-gray-600 mb-16">🧠 Stop guessing. Start proving.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
-              <div key={index} className="flex items-start">
+              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-4">
                 <Check className="h-6 w-6 text-green-600 mr-4 mt-0.5 flex-shrink-0" />
                 <p className="text-lg text-gray-700">{audience}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center bg-white border border-gray-200 rounded-lg p-8">
-            <p className="text-xl text-gray-800 font-medium">
+          <div className="text-center bg-blue-600 text-white rounded-xl p-8 shadow-lg">
+            <p className="text-xl font-medium">
               If you've built something real, we help you prove it — in USCIS language.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
+
       {/* What a Typical Member Gets */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-16">
+          <div className="flex items-center justify-center mb-4">
             <Calendar className="h-8 w-8 text-blue-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-900">What a Typical Member Gets</h2>
+            <h2 className="text-4xl font-bold text-gray-900">📅 What a Typical Member Gets</h2>
           </div>
           
           <div className="space-y-6 mb-12">
             {timeline.map((item, index) => (
-              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-6">
-                <div className="w-20 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-6">
-                  <span className="text-sm font-bold text-blue-600">{item.day}</span>
+              <div key={index} className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-20 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 mr-6">
+                  <span className="text-sm font-bold text-white">{item.day}</span>
                 </div>
                 <div className="flex-1">
                   <p className="text-lg text-gray-800">{item.action}</p>
@@ -252,33 +276,36 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center bg-blue-600 text-white rounded-lg p-8 mb-8">
-            <h3 className="text-2xl font-bold mb-2">By Week 3 — you're visa-proofed.</h3>
+          <div className="text-center bg-green-600 text-white rounded-xl p-8 mb-8 shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">🎉 By Week 3 — you're visa-proofed.</h3>
           </div>
 
-          <div className="text-center">
+          <div className="text-center bg-white rounded-xl p-8 border-2 border-gray-200">
             <p className="text-lg text-gray-700 mb-6">
               Still have questions?<br />
               → Fill this 1-minute form and we'll get back personally
             </p>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 border-yellow-400 hover:bg-yellow-50">
               Contact Us
             </Button>
           </div>
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
       {/* What You Get */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            What You Get
+            🎁 What You Get
           </h2>
           <div className="space-y-6 mb-12">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
-                <div key={index} className="border border-gray-200 bg-white rounded-lg p-6 hover:border-blue-200 transition-colors">
+                <div key={index} className="border-2 border-gray-200 bg-white rounded-xl p-6 hover:border-blue-200 transition-all duration-200 shadow-sm hover:shadow-md">
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                       <IconComponent className="h-6 w-6 text-blue-600" />
@@ -290,7 +317,7 @@ const Index = () => {
                       <p className="text-gray-700 mb-3">
                         {feature.description}
                       </p>
-                      <span className="text-sm font-medium text-green-600">
+                      <span className="text-sm font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">
                         {feature.criteria}
                       </span>
                     </div>
@@ -301,17 +328,17 @@ const Index = () => {
           </div>
           
           {/* Pricing highlight */}
-          <div className="text-center bg-blue-50 border border-blue-200 rounded-lg p-8 mb-8">
+          <div className="text-center bg-yellow-100 border-2 border-yellow-300 rounded-xl p-8 mb-8 shadow-lg">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Zap className="h-6 w-6 text-blue-600" />
-              <h3 className="text-2xl font-bold text-gray-900">All this: ₹39,999 / $500</h3>
+              <Zap className="h-6 w-6 text-yellow-600" />
+              <h3 className="text-2xl font-bold text-gray-900">💥 All this: ₹39,999 / $500</h3>
             </div>
             <p className="text-lg text-gray-700">
               Delivered in 2–3 weeks. Yours forever.
             </p>
           </div>
           
-          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mb-8">
+          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mb-8 bg-gray-50 p-4 rounded-r-lg">
             We don't file your visa. We make you credible enough that lawyers want to.
           </p>
 
@@ -346,33 +373,46 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
+
       {/* Pricing */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-yellow-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            Pricing
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            💰 Pricing
           </h2>
+          <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8 border-2 border-blue-200">
+            <Card className="p-8 border-2 border-blue-200 bg-white shadow-lg">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">$500 Membership</h3>
-                <p className="text-gray-600 mb-6">
-                  Includes: Judging invites, press features, awards, LORs, Notion portfolio, Discord access
-                </p>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Apply Now
+                <div className="flex items-center mb-4">
+                  <Unlock className="h-6 w-6 text-blue-600 mr-2" />
+                  <h3 className="text-2xl font-bold text-gray-900">$500 Membership</h3>
+                </div>
+                <div className="space-y-2 mb-6">
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Lifetime access 🔓</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Judging invite, press feature, 2–3 LORs</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Notion + PDF visa portfolio</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord builder network</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future drops: awards, ghostwriting, lawyer recs</p>
+                </div>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+                  🔵 Get Started – $500
                 </Button>
               </CardContent>
             </Card>
             
-            <Card className="p-8 border-2 border-green-200 bg-green-50">
+            <Card className="p-8 border-2 border-yellow-300 bg-yellow-100 shadow-lg">
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">$999 Concierge</h3>
-                <p className="text-gray-600 mb-6">
-                  For fast-track delivery, ghostwriting, and personal portfolio review
-                </p>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Pay $500
+                <div className="space-y-2 mb-6">
+                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" />💨 7-day delivery</p>
+                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />✍️ Ghostwriting upgrades</p>
+                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />🔍 Personal portfolio review</p>
+                </div>
+                <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-lg py-3">
+                  🟡 Go Concierge – $999
                 </Button>
               </CardContent>
             </Card>
@@ -380,16 +420,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
+
       {/* FAQs */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            Frequently Asked Questions
+            ❓ Frequently Asked Questions
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <Collapsible key={index} open={openFaq === index} onOpenChange={() => toggleFaq(index)}>
-                <CollapsibleTrigger className="flex items-center justify-between w-full p-6 bg-white rounded-lg border border-gray-200 text-left hover:bg-gray-50 transition-colors">
+                <CollapsibleTrigger className="flex items-center justify-between w-full p-6 bg-gray-50 rounded-lg border border-gray-200 text-left hover:bg-gray-100 transition-colors">
                   <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
                   {openFaq === index ? (
                     <Minus className="h-5 w-5 text-gray-500" />
@@ -406,21 +449,24 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
       {/* Final CTA */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Ready to prove you're extraordinary?
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            🚀 Ready to prove you're extraordinary?
           </h2>
-          <p className="text-xl text-gray-600 mb-12">
+          <p className="text-xl mb-12 opacity-90">
             Join 100+ global builders building their visa proof — the smart way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 border-0">
               Join the Waitlist
             </Button>
-            <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700">
-              Get Started – $500
+            <Button size="lg" className="text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-lg">
+              Yes, I want to prove I'm extraordinary
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
