@@ -1,5 +1,4 @@
-
-import { Check, ArrowRight, Plus, Minus } from "lucide-react";
+import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -32,12 +31,36 @@ const Index = () => {
   ];
 
   const features = [
-    "Judging Invites",
-    "Letters of Recommendation", 
-    "Awards + Recognition",
-    "Press & Podcast Features",
-    "Notion-Based Visa Portfolio",
-    "Discord Community Access"
+    {
+      icon: Zap,
+      title: "Judging Invite",
+      description: "Earn a real judging certificate from Maximally-run hackathons. Public listing included.",
+      criteria: "✅ USCIS Criteria #3"
+    },
+    {
+      icon: Newspaper,
+      title: "Press Feature", 
+      description: "Get published in a podcast-style builder article on your story.",
+      criteria: "✅ USCIS Criteria #2"
+    },
+    {
+      icon: PenLine,
+      title: "Letters of Recommendation",
+      description: "Receive 2–3 expert letters based on your actual projects and mentorships.",
+      criteria: "✅ USCIS Criteria #6"
+    },
+    {
+      icon: Folder,
+      title: "Notion Visa Portfolio",
+      description: "We bundle your story, assets, and proof into a USCIS-friendly format.",
+      criteria: "✅ Critical supporting doc"
+    },
+    {
+      icon: Globe,
+      title: "Private Discord Club",
+      description: "Swap judging, get peer validation, and build with visa-ready founders.",
+      criteria: "✅ Peer proof + support"
+    }
   ];
 
   const steps = [
@@ -110,15 +133,44 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
             What You Get
           </h2>
-          <div className="space-y-4 mb-12">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-center text-lg">
-                <Check className="h-6 w-6 text-green-600 mr-4 flex-shrink-0" />
-                <span className="text-gray-800">{feature}</span>
-              </div>
-            ))}
+          <div className="space-y-6 mb-12">
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <div key={index} className="border border-gray-200 rounded-lg p-6 hover:border-blue-200 transition-colors">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <IconComponent className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-700 mb-3">
+                        {feature.description}
+                      </p>
+                      <span className="text-sm font-medium text-green-600">
+                        {feature.criteria}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6">
+          
+          {/* Pricing highlight */}
+          <div className="text-center bg-blue-50 border border-blue-200 rounded-lg p-8">
+            <div className="flex items-center justify-center space-x-2 mb-4">
+              <Zap className="h-6 w-6 text-blue-600" />
+              <h3 className="text-2xl font-bold text-gray-900">All this: ₹39,999 / $500</h3>
+            </div>
+            <p className="text-lg text-gray-700">
+              Delivered in 2–3 weeks. Yours forever.
+            </p>
+          </div>
+          
+          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mt-8">
             We don't file your visa. We make you credible enough that lawyers want to.
           </p>
         </div>
