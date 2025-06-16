@@ -1,8 +1,13 @@
-# O-1 Visa Builder
+# Extraordinary Club
 
 ## Overview
 
-O-1 Visa Builder is a full-stack web application designed to help individuals build extraordinary O-1 visa portfolios through real opportunities, published press coverage, and expert letters of recommendation. The application provides a platform where users can access judging opportunities at hackathons, get published press coverage, and build comprehensive portfolios that meet USCIS criteria.
+Extraordinary Club is a full-stack web application designed to help individuals build extraordinary O-1 visa portfolios through real opportunities, published press coverage, and expert letters of recommendation. The application provides a platform where users can access judging opportunities at hackathons, get published press coverage, and build comprehensive portfolios that meet USCIS criteria.
+
+**Business Details:**
+- Business Name: Extraordinary Club
+- Domain: extraordinaryclub.xyz
+- Focus: O-1 and EB-1 visa application support services
 
 ## System Architecture
 
@@ -87,9 +92,14 @@ The application includes a comprehensive UI component library based on shadcn/ui
 - **Port Mapping**: Internal port 5000 mapped to external port 80
 - **Autoscale Deployment**: Configured for automatic scaling based on demand
 
-## Changelog
+## Recent Changes
 
-- June 16, 2025. Initial setup
+- June 16, 2025: Initial setup complete
+- June 16, 2025: Migration from Replit Agent to Replit environment completed
+- June 16, 2025: Updated all branding to "Extraordinary Club" with domain extraordinaryclub.xyz
+- June 16, 2025: Added comprehensive pricing section with 3 tiers ($299, $599, $999)
+- June 16, 2025: Updated navigation and footer to only show existing pages (Home, Blog, Pricing)
+- June 16, 2025: Fixed all internal links and SEO metadata
 
 ## User Preferences
 

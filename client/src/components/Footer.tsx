@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="text-2xl">🚀</div>
-              <span className="text-xl font-bold">O-1 Visa Builder</span>
+              <span className="text-xl font-bold">Extraordinary Club</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation.
@@ -25,66 +25,51 @@ export const Footer = () => {
             </div>
           </div>
 
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul className="space-y-3 text-gray-300">
+              <li>
+                <Link href="/" className="hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <a href="#pricing" className="hover:text-white transition-colors">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Services */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-3 text-gray-300">
               <li>
-                <Link href="#pricing" className="hover:text-white transition-colors">
+                <a href="#pricing" className="hover:text-white transition-colors">
                   Judging Opportunities
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#pricing" className="hover:text-white transition-colors">
+                <a href="#pricing" className="hover:text-white transition-colors">
                   Press Coverage
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#pricing" className="hover:text-white transition-colors">
+                <a href="#pricing" className="hover:text-white transition-colors">
                   Expert Letters
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#pricing" className="hover:text-white transition-colors">
+                <a href="#pricing" className="hover:text-white transition-colors">
                   Portfolio Building
-                </Link>
-              </li>
-              <li>
-                <Link href="#pricing" className="hover:text-white transition-colors">
-                  USCIS Documentation
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Resources</h3>
-            <ul className="space-y-3 text-gray-300">
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  O-1 Visa Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  Success Stories
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  USCIS Updates
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  Portfolio Tips
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  Visa Requirements
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -94,17 +79,14 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-sm">
-            © {currentYear} O-1 Visa Builder. All rights reserved.
+            © {currentYear} Extraordinary Club. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm text-gray-400">
-            <Link href="/privacy" className="hover:text-white transition-colors">
-              Privacy Policy
+            <Link href="/" className="hover:text-white transition-colors">
+              Home
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="/contact" className="hover:text-white transition-colors">
-              Contact
+            <Link href="/blog" className="hover:text-white transition-colors">
+              Blog
             </Link>
           </div>
         </div>

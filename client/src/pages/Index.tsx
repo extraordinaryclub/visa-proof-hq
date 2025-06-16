@@ -106,18 +106,18 @@ const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "O-1 Visa Builder",
+    "name": "Extraordinary Club",
     "description": "Professional O-1 and EB-1 visa application services including judging opportunities, press coverage, and expert letters of recommendation",
-    "url": "https://o1visabuilder.com",
-    "logo": "https://o1visabuilder.com/logo.png",
+    "url": "https://extraordinaryclub.xyz",
+    "logo": "https://extraordinaryclub.xyz/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
       "availableLanguage": "English"
     },
     "sameAs": [
-      "https://twitter.com/o1visabuilder",
-      "https://linkedin.com/company/o1visabuilder"
+      "https://twitter.com/extraordinaryclub",
+      "https://linkedin.com/company/extraordinaryclub"
     ],
     "service": {
       "@type": "Service",
@@ -125,7 +125,7 @@ const Index = () => {
       "description": "Complete O-1 visa portfolio building service including judging invites, press coverage, and documentation",
       "provider": {
         "@type": "Organization",
-        "name": "O-1 Visa Builder"
+        "name": "Extraordinary Club"
       }
     }
   };
@@ -133,12 +133,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="O-1 Visa Builder - Get Judging Invites, Press Coverage & Expert Letters for Your O-1 Application"
+        title="Extraordinary Club - Get Judging Invites, Press Coverage & Expert Letters for Your O-1 Application"
         description="Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation. Proven system used by 100+ approved applicants."
         keywords="O-1 visa, EB-1 visa, extraordinary ability visa, judging opportunities, press coverage, letters of recommendation, USCIS criteria, visa application, immigration portfolio"
-        ogTitle="O-1 Visa Builder - Build Your Extraordinary Ability Portfolio"
+        ogTitle="Extraordinary Club - Build Your Extraordinary Ability Portfolio"
         ogDescription="Get real judging invites, press coverage, and expert letters to make your O-1 visa application extraordinary. Join 100+ successful applicants."
-        canonical="https://o1visabuilder.com"
+        canonical="https://extraordinaryclub.xyz"
         structuredData={structuredData}
       />
 
@@ -147,7 +147,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-blue-600">🚀</div>
-            <span className="text-xl font-bold text-gray-900">O-1 Visa Builder</span>
+            <span className="text-xl font-bold text-gray-900">Extraordinary Club</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
@@ -716,8 +716,180 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="px-6 py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              💰 Simple Pricing
+            </h2>
+            <p className="text-xl text-gray-600 mb-2">
+              One payment. Lifetime access. No subscriptions.
+            </p>
+            <p className="text-lg text-gray-500">
+              Most members see results within 3-6 months.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Starter Plan */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8 relative">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                <div className="text-4xl font-bold text-gray-900 mb-2">$299</div>
+                <p className="text-gray-600">One-time payment</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">1 judging opportunity placement</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">1 published interview/feature</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">1 expert letter of recommendation</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Portfolio template access</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Discord community access</span>
+                </li>
+              </ul>
+              
+              <Button className="w-full bg-gray-600 hover:bg-gray-700">
+                Get Started
+              </Button>
+            </div>
+
+            {/* Professional Plan */}
+            <div className="bg-blue-600 text-white rounded-xl p-8 relative transform scale-105 shadow-2xl">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">
+                  MOST POPULAR
+                </div>
+              </div>
+              
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold mb-2">Professional</h3>
+                <div className="text-4xl font-bold mb-2">$599</div>
+                <p className="text-blue-100">One-time payment</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>2-3 judging opportunity placements</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>2 published interviews/features</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>2-3 expert letters of recommendation</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Complete portfolio template + PDF export</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Discord community access</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Priority support & review</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span>Immigration lawyer referral network</span>
+                </li>
+              </ul>
+              
+              <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold">
+                Start Professional
+              </Button>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="bg-white border-2 border-gray-200 rounded-xl p-8 relative">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                <div className="text-4xl font-bold text-gray-900 mb-2">$999</div>
+                <p className="text-gray-600">One-time payment</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">5+ judging opportunity placements</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">3+ published interviews/features</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">4-5 expert letters of recommendation</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Complete portfolio + lawyer-ready package</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">All community benefits</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">1-on-1 strategy calls</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Direct lawyer introductions</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">White-glove service</span>
+                </li>
+              </ul>
+              
+              <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white">
+                Contact Us
+              </Button>
+            </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-8 max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                💡 Not sure which plan to choose?
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Most successful O-1 applicants start with Professional. It covers all major USCIS criteria and gives you everything you need for a strong application.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
+                  Schedule a Call
+                </Button>
+                <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                  Start with Professional
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-red-100 via-blue-100 to-yellow-100"></div>
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
 
       {/* Final CTA */}
       <section className="px-6 py-20 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
