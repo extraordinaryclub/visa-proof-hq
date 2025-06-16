@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /blog
+Allow: /blog/*
+
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid*
+
+Sitemap: https://o1visabuilder.com/sitemap.xml
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 1

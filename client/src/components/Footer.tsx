@@ -1,0 +1,132 @@
+import { Link } from 'wouter';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+
+export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="text-2xl">🚀</div>
+              <span className="text-xl font-bold">O-1 Visa Builder</span>
+            </div>
+            <p className="text-gray-300 mb-6 max-w-md">
+              Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation.
+            </p>
+            <div className="flex space-x-4">
+              <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-gray-900">
+                Get Started
+              </Button>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Services</h3>
+            <ul className="space-y-3 text-gray-300">
+              <li>
+                <Link href="#pricing" className="hover:text-white transition-colors">
+                  Judging Opportunities
+                </Link>
+              </li>
+              <li>
+                <Link href="#pricing" className="hover:text-white transition-colors">
+                  Press Coverage
+                </Link>
+              </li>
+              <li>
+                <Link href="#pricing" className="hover:text-white transition-colors">
+                  Expert Letters
+                </Link>
+              </li>
+              <li>
+                <Link href="#pricing" className="hover:text-white transition-colors">
+                  Portfolio Building
+                </Link>
+              </li>
+              <li>
+                <Link href="#pricing" className="hover:text-white transition-colors">
+                  USCIS Documentation
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Resources</h3>
+            <ul className="space-y-3 text-gray-300">
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  O-1 Visa Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Success Stories
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  USCIS Updates
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Portfolio Tips
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Visa Requirements
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <Separator className="my-8 bg-gray-700" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-gray-400 text-sm">
+            © {currentYear} O-1 Visa Builder. All rights reserved.
+          </div>
+          <div className="flex space-x-6 text-sm text-gray-400">
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-white transition-colors">
+              Terms of Service
+            </Link>
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Contact
+            </Link>
+          </div>
+        </div>
+
+        {/* Additional SEO Links */}
+        <div className="mt-8 pt-8 border-t border-gray-700">
+          <div className="text-sm text-gray-400">
+            <p className="mb-2">
+              <strong className="text-gray-300">Popular searches:</strong>
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/blog" className="hover:text-white transition-colors">O-1 visa requirements</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">EB-1 extraordinary ability</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">USCIS criteria examples</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Judging experience visa</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Letters of recommendation</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Press coverage visa</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">O-1 portfolio builder</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};

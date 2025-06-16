@@ -1,6 +1,7 @@
 
 import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock, Menu } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { Footer } from "@/components/Footer";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -374,7 +375,7 @@ const Index = () => {
       <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
 
       {/* Pricing */}
-      <section className="px-6 py-20 bg-yellow-50">
+      <section id="pricing" className="px-6 py-20 bg-yellow-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             💰 Pricing
@@ -739,10 +740,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 py-8 bg-gray-900 text-center">
-        <p className="text-gray-400">© 2024 ExtraordinaryClub. Building extraordinary futures.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };
