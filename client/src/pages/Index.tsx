@@ -393,15 +393,15 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
+      <div className="h-2 bg-gradient-to-r from-primary via-accent to-foreground"></div>
 
       {/* Pricing */}
-      <section id="pricing" className="px-6 py-20 bg-yellow-50">
+      <section id="pricing" className="px-6 py-20 bg-muted">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
             💰 Pricing
           </h2>
-          <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
+          <p className="text-center text-muted-foreground mb-16">Limited slots each month. Early access = faster delivery.</p>
           
           <div className="overflow-x-auto">
             <table className="w-full bg-card rounded-xl shadow-lg border border-border">
@@ -447,56 +447,56 @@ const Index = () => {
                   <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Feature</span></td>
                   <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Co-authored</span></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 LOR</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 2–3 LORs</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 5 + draft help</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Letters of Recommendation</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">1 LOR</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">2–3 LORs</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">5 + draft help</span></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Notion Portfolio</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Template</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Full version</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Reviewed</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Notion Portfolio</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Template</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Full version</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Reviewed</span></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Delivery Time</td>
-                  <td className="py-4 px-6 text-center">3–4 weeks</td>
-                  <td className="py-4 px-6 text-center">1–2 weeks</td>
-                  <td className="py-4 px-6 text-center">7 days</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Delivery Time</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">3–4 weeks</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">1–2 weeks</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">7 days</td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Discord Access</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Discord Access</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Portfolio Review</td>
-                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
-                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Portfolio Review</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Live Support</td>
-                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
-                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Call Support</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Live Support</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Call Support</span></td>
                 </tr>
                 <tr>
                   <td className="py-6 px-6"></td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                       Get Started – $299
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                       Get Started – $500
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                       Schedule a Call
                     </Button>
                   </td>
@@ -507,10 +507,10 @@ const Index = () => {
 
           {/* Bonus Add-on */}
           <div className="mt-12 max-w-2xl mx-auto">
-            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-6 text-center">
-              <h4 className="text-xl font-bold text-gray-900 mb-3">💼 Bonus Add-on:</h4>
-              <h5 className="text-lg font-semibold text-gray-800 mb-2">"Lawyer-Ready Review" – $149</h5>
-              <p className="text-gray-600">Portfolio check + polish by an immigration consultant before you apply</p>
+            <div className="bg-secondary border-2 border-border rounded-xl p-6 text-center">
+              <h4 className="text-xl font-bold text-foreground mb-3">💼 Bonus Add-on:</h4>
+              <h5 className="text-lg font-semibold text-foreground mb-2">"Lawyer-Ready Review" – $149</h5>
+              <p className="text-muted-foreground">Portfolio check + polish by an immigration consultant before you apply</p>
             </div>
           </div>
         </div>
