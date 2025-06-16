@@ -15,148 +15,157 @@ const Index = () => {
   const faqs = [
     {
       question: "Is this legal?",
-      answer: "Yes. We don't offer legal advice — just credibility. Everything we build follows legitimate pathways that immigration lawyers recognize and use."
+      answer: "Yes. We don't offer legal advice — just credibility."
     },
     {
       question: "Do I still need a lawyer?",
-      answer: "Eventually, yes. We make your portfolio lawyer-ready. They handle the filing. Think of us as your proof team, not your legal team."
+      answer: "Yes. We make your portfolio. They file it."
     },
     {
       question: "What kind of people use this?",
-      answer: "Founders with traction, researchers with impact, creators with reach. People who've built real things but lack the formal proof structure USCIS wants."
+      answer: "Founders, researchers, creators, and builders."
     },
     {
       question: "What if I don't get the visa?",
-      answer: "You still own world-class proof of your extraordinary ability. Use it for other visas, job applications, or fundraising. The credibility is yours forever."
+      answer: "You still get a world-class proof stack. Use it anywhere."
     }
   ];
 
   const features = [
     {
       icon: Zap,
-      title: "🏆 Real Judging Invites",
-      description: "Judge actual Maximally hackathons with 500+ participants. Public certificate, verified credentials, documented impact.",
-      criteria: "✅ USCIS Criterion #3: Judging"
+      title: "🧠 Judging Invite",
+      description: "Earn a real judging certificate from Maximally-run hackathons. Public listing included.",
+      criteria: "✅ USCIS Criteria #3"
     },
     {
       icon: Newspaper,
-      title: "📰 Published Features", 
-      description: "Professional articles highlighting your work, story, and expertise. Published on established platforms with real readership.",
-      criteria: "✅ USCIS Criterion #2: Press Coverage"
+      title: "📰 Press Feature", 
+      description: "Get published in a podcast-style builder article on your story.",
+      criteria: "✅ USCIS Criteria #2"
     },
     {
       icon: PenLine,
-      title: "✍️ Expert Recommendation Letters",
-      description: "2-3 detailed letters from industry leaders who know your work. Written by people with credentials USCIS respects.",
-      criteria: "✅ USCIS Criterion #6: Letters of Recommendation"
+      title: "✍️ Letters of Recommendation",
+      description: "Receive 2–3 expert letters based on your actual projects and mentorships.",
+      criteria: "✅ USCIS Criteria #6"
     },
     {
       icon: Folder,
-      title: "📁 USCIS-Ready Portfolio",
-      description: "Professional Notion workspace organizing all your proof. Exports to lawyer-friendly PDFs with proper documentation.",
-      criteria: "✅ Supporting Evidence Package"
+      title: "📁 Notion Visa Portfolio",
+      description: "We bundle your story, assets, and proof into a USCIS-friendly format.",
+      criteria: "✅ Critical supporting doc"
     },
     {
       icon: Globe,
-      title: "🤝 Builder Network Access",
-      description: "Private Discord with visa-ready founders. Peer validation, judging swaps, and real connections that matter.",
-      criteria: "✅ Network Effects & Validation"
+      title: "🌐 Private Discord Club",
+      description: "Swap judging, get peer validation, and build with visa-ready founders.",
+      criteria: "✅ Peer proof + support"
     }
   ];
 
   const steps = [
     {
-      title: "🔓 Join & Onboard",
-      description: "Quick intake form. We map your existing work to USCIS criteria."
+      title: "🔓 Join the Club",
+      description: "Pay once, get lifetime access"
     },
     {
       title: "🚀 We Build Your Proof", 
-      description: "Judging spots, press features, expert LORs. Real credentials, not paperwork."
+      description: "Judging spots, awards, press, LORs"
     },
     {
       title: "📦 Portfolio Delivered",
-      description: "Complete visa-ready package. Notion workspace + PDF exports."
+      description: "Notion + PDF export"
     },
     {
-      title: "🎯 Apply With Confidence",
-      description: "Use solo or hand to your lawyer. Either way, you're bulletproof."
+      title: "🎯 You Apply With Confidence",
+      description: "Use it with your lawyer or solo"
     }
   ];
 
   const liveFeatures = [
-    "Judging invites for verified Maximally events (real hackathons, real impact)",
-    "Professional feature articles highlighting your expertise and story", 
-    "2-3 recommendation letters from credentialed industry professionals",
-    "USCIS-formatted portfolio with all evidence properly documented",
-    "Private founder network for ongoing peer validation and opportunities"
+    "Judging invites from real Maximally events",
+    "Blog feature or podcast-style interview", 
+    "2–3 Letters of Recommendation via mentors / event leads",
+    "Notion-based visa portfolio template (editable + exportable)",
+    "Access to private Discord (founder visa prep community)"
   ];
 
   const comingSoonFeatures = [
-    "Award nominations and formal recognition programs",
-    "Ghostwritten thought leadership content",
-    "Direct lawyer partnership network for filing", 
-    "Public credibility scoring and verification",
-    "Advanced portfolio optimization and A/B testing"
+    "Public press drops via Maximally Studios",
+    "Ghostwritten story upgrades",
+    "Custom award generator", 
+    "Public credibility leaderboard",
+    "Lawyer matchmaking partner network"
   ];
 
   const targetAudience = [
-    "Startup founders with product traction but no formal recognition",
-    "Engineers and researchers with technical expertise but limited visibility",
-    "Creators and builders with real impact but poor documentation",
-    "International talent planning O-1 or EB-1 applications within 12 months",
-    "Anyone tired of $10K+ immigration lawyers who can't build proof"
+    "Startup founders building in tech, AI, sustainability, etc.",
+    "Researchers with publications or niche domain work",
+    "Creators or artists with a portfolio but no proof",
+    "Builders aiming for O-1 or EB-1 within the next 12 months",
+    "Anyone tired of overpriced agencies and unclear steps"
+  ];
+
+  const timeline = [
+    { day: "Day 1", action: "You join and fill your intake form" },
+    { day: "Day 3", action: "You're assigned to judge a real Maximally event" },
+    { day: "Day 5", action: "You get your first draft LOR + event certificate" },
+    { day: "Day 10", action: "We publish your feature article on Substack" },
+    { day: "Day 14–18", action: "You receive a full Notion + PDF visa portfolio" },
+    { day: "Bonus", action: "You get tagged for a future podcast episode" }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="px-6 py-24 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
+      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
-            🚀 <span className="text-blue-600">Extraordinary ability.</span><br />Actually provable.
+          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
           </h1>
-          <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-6 max-w-4xl mx-auto">
-            We build O-1 and EB-1 visa portfolios that immigration lawyers actually want to file.
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+            And make your visa application impossible to ignore.
           </h2>
         </div>
-        <p className="text-lg md:text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
-          <strong>Judging certificates. Expert recommendation letters. Published features.</strong>
+        <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed">
+          Judging invites. LORs. Press. All built for you.
         </p>
-        <p className="text-base md:text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-          Stop guessing what USCIS wants. Start building what they approve.
+        <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium">
+          Use it to apply for O-1 / EB-1 like a goddamn founder.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-50">
             Join Waitlist
           </Button>
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
-            Build My Proof – $500
+            Get Started – $500
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
-        <p className="text-sm text-gray-500 mt-6">✅ No lawyers required upfront. Just bulletproof evidence.</p>
+        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-blue-200 via-yellow-200 to-green-200"></div>
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* How It Works */}
       <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            How We Build Your Proof
+            🛠️ How It Works
           </h2>
-          <p className="text-center text-gray-600 mb-16">🎯 USCIS has 8 criteria. We help you nail the important ones.</p>
+          <p className="text-center text-gray-600 mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {index + 1}
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-gray-900">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600">
                   {step.description}
                 </p>
               </div>
@@ -166,20 +175,20 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-green-200 via-blue-200 to-yellow-200"></div>
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
 
-      {/* What's Live Right Now */}
+      {/* What's Actually Live Right Now */}
       <section className="px-6 py-20 bg-yellow-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            🟢 What's Live Right Now
+            🟢 What's Actually Live Right Now
           </h2>
-          <p className="text-center text-gray-600 mb-16">⏳ Real deliverables. Real timelines. Real results.</p>
+          <p className="text-center text-gray-600 mb-16">⏳ Most members complete their portfolio in 18 days or less.</p>
           
           <div className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8 shadow-sm">
             <div className="flex items-center mb-6">
               <div className="w-4 h-4 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-              <h3 className="text-2xl font-bold text-gray-900">Shipping Now</h3>
+              <h3 className="text-2xl font-bold text-gray-900">What's Included Right Now (Live & Working)</h3>
             </div>
             <div className="space-y-3">
               {liveFeatures.map((feature, index) => (
@@ -191,10 +200,10 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 shadow-sm">
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 mb-8 shadow-sm">
             <div className="flex items-center mb-6">
               <Clock className="h-6 w-6 text-blue-600 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">Coming Soon</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Coming Soon (you'll be first in line):</h3>
             </div>
             <div className="space-y-3">
               {comingSoonFeatures.map((feature, index) => (
@@ -207,20 +216,24 @@ const Index = () => {
               ))}
             </div>
           </div>
+
+          <p className="text-lg text-gray-600 text-center font-medium bg-white rounded-lg p-4 border border-gray-200">
+            👀 Our judging invites are real. Our awards are earned.
+          </p>
         </div>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-yellow-200 via-green-200 to-blue-200"></div>
+      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
 
       {/* Who This Is For */}
       <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center mb-4">
             <Target className="h-8 w-8 text-blue-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-900">Who This Is For</h2>
+            <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
           </div>
-          <p className="text-center text-gray-600 mb-16">🧠 Built something extraordinary? Now prove it to USCIS.</p>
+          <p className="text-center text-gray-600 mb-16">🧠 Stop guessing. Start proving.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
@@ -233,24 +246,61 @@ const Index = () => {
 
           <div className="text-center bg-blue-600 text-white rounded-xl p-8 shadow-lg">
             <p className="text-xl font-medium">
-              <strong>If you've built real impact, we'll help you document it properly.</strong><br />
-              <span className="text-blue-100">No fluff. No fake credentials. Just proof that works.</span>
+              If you've built something real, we help you prove it — in USCIS language.
             </p>
           </div>
         </div>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-blue-200 via-yellow-200 to-green-200"></div>
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
-      {/* What You Get */}
+      {/* What a Typical Member Gets */}
       <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            What You Actually Get
-          </h2>
-          <p className="text-center text-gray-600 mb-16">🎯 Each deliverable maps directly to USCIS extraordinary ability criteria.</p>
+          <div className="flex items-center justify-center mb-4">
+            <Calendar className="h-8 w-8 text-blue-600 mr-4" />
+            <h2 className="text-4xl font-bold text-gray-900">📅 What a Typical Member Gets</h2>
+          </div>
           
+          <div className="space-y-6 mb-12">
+            {timeline.map((item, index) => (
+              <div key={index} className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-20 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 mr-6">
+                  <span className="text-sm font-bold text-white">{item.day}</span>
+                </div>
+                <div className="flex-1">
+                  <p className="text-lg text-gray-800">{item.action}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center bg-green-600 text-white rounded-xl p-8 mb-8 shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">🎉 By Week 3 — you're visa-proofed.</h3>
+          </div>
+
+          <div className="text-center bg-white rounded-xl p-8 border-2 border-gray-200">
+            <p className="text-lg text-gray-700 mb-6">
+              Still have questions?<br />
+              → Fill this 1-minute form and we'll get back personally
+            </p>
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 border-yellow-400 hover:bg-yellow-50">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
+      {/* What You Get */}
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+            🎁 What You Get
+          </h2>
           <div className="space-y-6 mb-12">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
@@ -277,44 +327,45 @@ const Index = () => {
             })}
           </div>
           
-          {/* Value highlight */}
+          {/* Pricing highlight */}
           <div className="text-center bg-yellow-100 border-2 border-yellow-300 rounded-xl p-8 mb-8 shadow-lg">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Zap className="h-6 w-6 text-yellow-600" />
-              <h3 className="text-2xl font-bold text-gray-900">Complete Package: $500</h3>
+              <h3 className="text-2xl font-bold text-gray-900">💥 All this: ₹39,999 / $500</h3>
             </div>
-            <p className="text-lg text-gray-700 mb-4">
-              Delivered in 2-3 weeks. Yours forever.
-            </p>
-            <p className="text-base text-gray-600">
-              <strong>Compare:</strong> Immigration lawyers charge $10K+ and still need you to bring the proof.
+            <p className="text-lg text-gray-700">
+              Delivered in 2–3 weeks. Yours forever.
             </p>
           </div>
+          
+          <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mb-8 bg-gray-50 p-4 rounded-r-lg">
+            We don't file your visa. We make you credible enough that lawyers want to.
+          </p>
 
-          {/* Why It Works */}
+          {/* Why It Works Quote */}
           <div className="text-center mb-8">
-            <blockquote className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-              "We don't file visas. We build the proof that wins them."
+            <blockquote className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              "Most lawyers file the papers. We give you the proof to win."
             </blockquote>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               <div className="space-y-4">
                 <div className="flex items-start">
                   <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700"><strong>Real events:</strong> We run the hackathons you judge</p>
+                  <p className="text-lg text-gray-700">We run the events — judging is real</p>
                 </div>
                 <div className="flex items-start">
                   <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700"><strong>Real credentials:</strong> No fake certificates or bought reviews</p>
+                  <p className="text-lg text-gray-700">We issue awards — not Fiverr PDFs</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700"><strong>Real publications:</strong> Articles on platforms lawyers recognize</p>
+                  <p className="text-lg text-gray-700">We get you published — real articles, no fluff</p>
                 </div>
                 <div className="flex items-start">
                   <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700"><strong>Real structure:</strong> USCIS-formatted evidence packages</p>
+                  <p className="text-lg text-gray-700">You get a complete, structured proof portfolio</p>
                 </div>
               </div>
             </div>
@@ -323,65 +374,60 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-green-200 via-blue-200 to-yellow-200"></div>
+      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
 
       {/* Pricing */}
       <section className="px-6 py-20 bg-yellow-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            Simple, Honest Pricing
+            💰 Pricing
           </h2>
-          <p className="text-center text-gray-600 mb-16">Limited spots each month. First come, first served.</p>
+          <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="p-8 border-2 border-blue-200 bg-white shadow-lg">
               <CardContent className="p-0">
                 <div className="flex items-center mb-4">
                   <Unlock className="h-6 w-6 text-blue-600 mr-2" />
-                  <h3 className="text-2xl font-bold text-gray-900">$500 Complete Package</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">$500 Membership</h3>
                 </div>
-                <div className="space-y-3 mb-6">
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" /><strong>Everything you need:</strong> Judging + Press + LORs + Portfolio</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Delivered in 2-3 weeks</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />USCIS-ready documentation</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Lifetime access to builder network</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future platform updates included</p>
+                <div className="space-y-2 mb-6">
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Lifetime access 🔓</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Judging invite, press feature, 2–3 LORs</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Notion + PDF visa portfolio</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord builder network</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future drops: awards, ghostwriting, lawyer recs</p>
                 </div>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
-                  🔵 Start Building Proof
+                  🔵 Get Started – $500
                 </Button>
               </CardContent>
             </Card>
             
             <Card className="p-8 border-2 border-yellow-300 bg-yellow-100 shadow-lg">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">$799 Concierge</h3>
-                <div className="space-y-3 mb-6">
-                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" /><strong>Everything above, plus:</strong></p>
-                  <p className="flex items-center text-gray-700"><Clock className="h-4 w-4 text-yellow-600 mr-2" />1-week delivery guarantee</p>
-                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />Ghostwritten content upgrades</p>
-                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />Personal portfolio review call</p>
-                  <p className="flex items-center text-gray-700"><Globe className="h-4 w-4 text-yellow-600 mr-2" />Priority placement in events</p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">$999 Concierge</h3>
+                <div className="space-y-2 mb-6">
+                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" />💨 7-day delivery</p>
+                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />✍️ Ghostwriting upgrades</p>
+                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />🔍 Personal portfolio review</p>
                 </div>
                 <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-lg py-3">
-                  🟡 Go Concierge
+                  🟡 Go Concierge – $999
                 </Button>
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-gray-600 mt-8 text-lg">
-            <strong>Both options:</strong> Pay once, own forever. No subscriptions, no surprise fees.
-          </p>
         </div>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-yellow-200 via-green-200 to-blue-200"></div>
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* FAQs */}
       <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            ❓ Common Questions
+            ❓ Frequently Asked Questions
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -404,35 +450,32 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-1 bg-gradient-to-r from-blue-200 via-yellow-200 to-green-200"></div>
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
 
       {/* Final CTA */}
       <section className="px-6 py-20 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            🚀 Ready to prove extraordinary ability?
+            🚀 Ready to prove you're extraordinary?
           </h2>
           <p className="text-xl mb-12 opacity-90">
-            Join 100+ founders who chose proof over hope.
+            Join 100+ global builders building their visa proof — the smart way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="text-lg px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 border-0">
               Join the Waitlist
             </Button>
             <Button size="lg" className="text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-lg">
-              Build My Proof – $500
+              Yes, I want to prove I'm extraordinary
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-          <p className="text-blue-100 mt-6 text-sm">
-            <strong>No lawyers upfront.</strong> Just bulletproof evidence that works.
-          </p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="px-6 py-8 bg-gray-900 text-center">
-        <p className="text-gray-400">© 2024 ExtraordinaryProof. Building visa-worthy credibility.</p>
+        <p className="text-gray-400">© 2024 ExtraordinaryProof. Building extraordinary futures.</p>
       </footer>
     </div>
   );
