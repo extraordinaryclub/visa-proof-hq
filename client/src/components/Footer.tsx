@@ -13,7 +13,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="text-2xl">🚀</div>
+              <img src="/logo.png" alt="Extraordinary Club" className="w-8 h-8" />
               <span className="text-xl font-bold">Extraordinary Club</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

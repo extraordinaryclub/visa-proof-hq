@@ -164,7 +164,7 @@ const Index = () => {
       <nav className="px-6 py-4 bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-blue-600">🚀</div>
+            <img src="/logo.png" alt="Extraordinary Club" className="w-8 h-8" />
             <span className="text-xl font-bold text-gray-900">Extraordinary Club</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
@@ -190,6 +190,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
+          <img src="/logo.png" alt="Extraordinary Club Logo" className="w-16 h-16 mb-6 mx-auto" />
           <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
             🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
           </h1>
@@ -561,7 +562,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             👥 Who We Are
-          </h2>
+                    </h2>
           <p className="text-center text-gray-600 mb-16">Built by founders who've been there, done that.</p>
 
           <div className="grid cols-1 md:grid-cols-2 gap-8 mb-12">

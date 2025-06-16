@@ -129,6 +129,7 @@ const Blog = () => {
       {/* Header */}
       <section className="px-6 py-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-6xl mx-auto text-center">
+           <img src="/logo.png" alt="Extraordinary Club" className="w-8 h-8 mx-auto mb-6" />
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             O-1 Visa Blog
           </h1>

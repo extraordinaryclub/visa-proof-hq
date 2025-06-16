@@ -464,7 +464,7 @@ The hardest part isn't having the qualifications – it's learning to present yo
               Back to Blog
             </Button>
           </Link>
-          
+
           <div className="mb-6">
             <Badge variant="secondary" className="mb-4">
               {post.category.split('-').map(word => 
@@ -498,7 +498,7 @@ The hardest part isn't having the qualifications – it's learning to present yo
                 <span>{post.readTime}</span>
               </div>
             </div>
-            
+
             <Button variant="outline" size="sm">
               <Share2 className="h-4 w-4 mr-2" />
               Share
