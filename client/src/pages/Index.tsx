@@ -83,21 +83,7 @@ const Index = () => {
     }
   ];
 
-  const liveFeatures = [
-    "Real judging slots at premier startup events and hackathons with official certificates",
-    "Published feature interview on established tech publications with your byline and Google indexing", 
-    "2–3 personalized Letters of Recommendation from event organizers and startup mentors who know your work",
-    "Private Discord community with 100+ O-1/EB-1 applicants for judging swaps and portfolio reviews",
-    "Complete Notion portfolio template structured for immigration attorneys (with PDF export)"
-  ];
-
-  const comingSoonFeatures = [
-    "Public press drops via established publications",
-    "Ghostwritten story upgrades",
-    "Custom award generator", 
-    "Public credibility leaderboard",
-    "Lawyer matchmaking partner network"
-  ];
+  
 
   const targetAudience = [
     "Startup founders in tech, AI, climate, consumer, biotech, etc.",
@@ -133,7 +119,7 @@ const Index = () => {
             Join Waitlist
           </Button>
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
-            Get Started – $500
+            Just Get Started
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
@@ -170,55 +156,6 @@ const Index = () => {
 
       {/* Gradient Divider */}
       <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
-
-      {/* What's Actually Live Right Now */}
-      <section className="px-6 py-20 bg-yellow-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            🟢 What's Actually Live Right Now
-          </h2>
-          <p className="text-center text-gray-600 mb-16">⏳ Most members complete their portfolio in 18 days or less.</p>
-          
-          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8 shadow-sm">
-            <div className="flex items-center mb-6">
-              <div className="w-4 h-4 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-              <h3 className="text-2xl font-bold text-gray-900">What's Included Right Now (Live & Working)</h3>
-            </div>
-            <div className="space-y-3">
-              {liveFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700">{feature}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 mb-8 shadow-sm">
-            <div className="flex items-center mb-6">
-              <Clock className="h-6 w-6 text-blue-600 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">Coming Soon (you'll be first in line):</h3>
-            </div>
-            <div className="space-y-3">
-              {comingSoonFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="w-5 h-5 border-2 border-blue-400 rounded mr-3 mt-0.5 flex-shrink-0 flex items-center justify-center">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  </div>
-                  <p className="text-gray-700">{feature}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <p className="text-lg text-gray-600 text-center font-medium bg-white rounded-lg p-4 border border-gray-200">
-            👀 Our judging invites are real. Our awards are earned.
-          </p>
-        </div>
-      </section>
-
-      {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
 
       {/* Who This Is For */}
       <section className="px-6 py-20 bg-white">
