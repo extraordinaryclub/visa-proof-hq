@@ -156,10 +156,11 @@ const Index = () => {
             <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
               Blog
             </Link>
-            <Link href="#pricing" className="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="#pricing" className="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">
               Pricing
-            </Link>
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+            </a>
+            <Button size="sm" className="bg-blue-600 hover:bg-blue-700"
+                    onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started
             </Button>
           </div>
@@ -185,7 +186,8 @@ const Index = () => {
           Use it to apply for O-1 / EB-1 like a founder.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
+          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
             Get Started Now
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
@@ -673,7 +675,8 @@ const Index = () => {
               "The Discord alone was worth it. Found 3 judging swaps and got my portfolio reviewed by someone who's already approved."
             </p>
             <p className="text-sm text-gray-600 mb-6">— Jamie L., Biotech founder</p>
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
+                    onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started – from $299
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -904,7 +907,8 @@ const Index = () => {
             <Button size="lg" variant="outline" className="text-lg px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 border-0">
               Join the Waitlist
             </Button>
-            <Button size="lg" className="text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-lg">
+            <Button size="lg" className="text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-lg"
+                    onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Yes, I want to prove I'm extraordinary
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

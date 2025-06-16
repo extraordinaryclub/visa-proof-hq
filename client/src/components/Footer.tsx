@@ -19,7 +19,8 @@ export const Footer = () => {
               Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation.
             </p>
             <div className="flex space-x-4">
-              <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-gray-900">
+              <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-gray-900"
+                      onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
                 Get Started
               </Button>
             </div>
