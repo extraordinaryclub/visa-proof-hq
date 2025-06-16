@@ -1,5 +1,7 @@
 
-import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock } from "lucide-react";
+import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock, Menu } from "lucide-react";
+import { SEO } from "@/components/SEO";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -100,8 +102,71 @@ const Index = () => {
     "Builders applying for O-1 or EB-1 within the next 12 months"
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "O-1 Visa Builder",
+    "description": "Professional O-1 and EB-1 visa application services including judging opportunities, press coverage, and expert letters of recommendation",
+    "url": "https://o1visabuilder.com",
+    "logo": "https://o1visabuilder.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://twitter.com/o1visabuilder",
+      "https://linkedin.com/company/o1visabuilder"
+    ],
+    "service": {
+      "@type": "Service",
+      "name": "O-1 Visa Application Support",
+      "description": "Complete O-1 visa portfolio building service including judging invites, press coverage, and documentation",
+      "provider": {
+        "@type": "Organization",
+        "name": "O-1 Visa Builder"
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="O-1 Visa Builder - Get Judging Invites, Press Coverage & Expert Letters for Your O-1 Application"
+        description="Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation. Proven system used by 100+ approved applicants."
+        keywords="O-1 visa, EB-1 visa, extraordinary ability visa, judging opportunities, press coverage, letters of recommendation, USCIS criteria, visa application, immigration portfolio"
+        ogTitle="O-1 Visa Builder - Build Your Extraordinary Ability Portfolio"
+        ogDescription="Get real judging invites, press coverage, and expert letters to make your O-1 visa application extraordinary. Join 100+ successful applicants."
+        canonical="https://o1visabuilder.com"
+        structuredData={structuredData}
+      />
+
+      {/* Navigation Header */}
+      <nav className="px-6 py-4 bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <div className="text-2xl font-bold text-blue-600">🚀</div>
+            <span className="text-xl font-bold text-gray-900">O-1 Visa Builder</span>
+          </div>
+          <div className="hidden md:flex items-center space-x-8">
+            <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
+              Home
+            </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
+              Blog
+            </Link>
+            <Link href="#pricing" className="text-gray-700 hover:text-blue-600 font-medium">
+              Pricing
+            </Link>
+            <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
+              Get Started
+            </Button>
+          </div>
+          <Button variant="ghost" size="sm" className="md:hidden">
+            <Menu className="h-5 w-5" />
+          </Button>
+        </div>
+      </nav>
       {/* Hero Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
@@ -528,23 +593,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Track Record</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <p className="text-gray-700">Events Organized</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
-                <p className="text-gray-700">Members Helped</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">85%</div>
-                <p className="text-gray-700">Success Rate</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
