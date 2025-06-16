@@ -1,3 +1,4 @@
+
 import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -104,15 +105,6 @@ const Index = () => {
     "Creators or artists with a portfolio but no proof",
     "Builders aiming for O-1 or EB-1 within the next 12 months",
     "Anyone tired of overpriced agencies and unclear steps"
-  ];
-
-  const timeline = [
-    { day: "Day 1", action: "You join and fill your intake form" },
-    { day: "Day 3", action: "You're assigned to judge a real Maximally event" },
-    { day: "Day 5", action: "You get your first draft LOR + event certificate" },
-    { day: "Day 10", action: "We publish your feature article on Substack" },
-    { day: "Day 14–18", action: "You receive a full Notion + PDF visa portfolio" },
-    { day: "Bonus", action: "You get tagged for a future podcast episode" }
   ];
 
   return (
@@ -254,46 +246,6 @@ const Index = () => {
       {/* Gradient Divider */}
       <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
-      {/* What a Typical Member Gets */}
-      <section className="px-6 py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-4">
-            <Calendar className="h-8 w-8 text-blue-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-900">📅 What a Typical Member Gets</h2>
-          </div>
-          
-          <div className="space-y-6 mb-12">
-            {timeline.map((item, index) => (
-              <div key={index} className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <div className="w-20 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 mr-6">
-                  <span className="text-sm font-bold text-white">{item.day}</span>
-                </div>
-                <div className="flex-1">
-                  <p className="text-lg text-gray-800">{item.action}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center bg-green-600 text-white rounded-xl p-8 mb-8 shadow-lg">
-            <h3 className="text-2xl font-bold mb-2">🎉 By Week 3 — you're visa-proofed.</h3>
-          </div>
-
-          <div className="text-center bg-white rounded-xl p-8 border-2 border-gray-200">
-            <p className="text-lg text-gray-700 mb-6">
-              Still have questions?<br />
-              → Fill this 1-minute form and we'll get back personally
-            </p>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2 border-yellow-400 hover:bg-yellow-50">
-              Contact Us
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
-
       {/* What You Get */}
       <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -382,17 +334,6 @@ const Index = () => {
                 </div>
               );
             })}
-          </div>
-          
-          {/* Pricing highlight */}
-          <div className="text-center bg-yellow-100 border-2 border-yellow-300 rounded-xl p-8 mb-8 shadow-lg">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <Zap className="h-6 w-6 text-yellow-600" />
-              <h3 className="text-2xl font-bold text-gray-900">💥 All this: ₹39,999 / $500</h3>
-            </div>
-            <p className="text-lg text-gray-700">
-              Delivered in 2–3 weeks. Yours forever.
-            </p>
           </div>
           
           <p className="text-lg text-gray-600 text-center italic border-l-4 border-blue-600 pl-6 mb-8 bg-gray-50 p-4 rounded-r-lg">
