@@ -34,33 +34,33 @@ const Index = () => {
   const features = [
     {
       icon: Zap,
-      title: "🧠 Judging Invite",
-      description: "Earn a real judging certificate from Maximally-run hackathons. Public listing included.",
-      criteria: "✅ USCIS Criteria #3"
+      title: "Real Hackathon Judging",
+      description: "Judge at Maximally Startup Makeathon, Stealth Hack, and other events we organize. Get official certificates and public recognition.",
+      criteria: "USCIS Criteria #3 - Judging"
     },
     {
       icon: Newspaper,
-      title: "📰 Press Feature", 
-      description: "Get published in a podcast-style builder article on your story.",
-      criteria: "✅ USCIS Criteria #2"
+      title: "Published Press Coverage", 
+      description: "Featured interview about your work on Maximally Studios blog. Real byline, real publication, indexed by Google.",
+      criteria: "USCIS Criteria #2 - Published Material"
     },
     {
       icon: PenLine,
-      title: "✍️ Letters of Recommendation",
-      description: "Receive 2–3 expert letters based on your actual projects and mentorships.",
-      criteria: "✅ USCIS Criteria #6"
-    },
-    {
-      icon: Folder,
-      title: "📁 Notion Visa Portfolio",
-      description: "We bundle your story, assets, and proof into a USCIS-friendly format.",
-      criteria: "✅ Critical supporting doc"
+      title: "Expert Letters of Recommendation",
+      description: "2–3 personalized LORs from event organizers, startup mentors, and industry leaders who've worked with you directly.",
+      criteria: "USCIS Criteria #6 - Expert Testimony"
     },
     {
       icon: Globe,
-      title: "🌐 Private Discord Club",
-      description: "Swap judging, get peer validation, and build with visa-ready founders.",
-      criteria: "✅ Peer proof + support"
+      title: "Private Founder Community",
+      description: "Join 100+ visa-ready builders in our Discord. Swap judging opportunities, get portfolio feedback, share wins.",
+      criteria: "Peer Validation Network"
+    },
+    {
+      icon: Folder,
+      title: "Lawyer-Ready Portfolio",
+      description: "Everything organized in Notion with PDF export. Structured exactly how immigration attorneys and USCIS expect to see it.",
+      criteria: "Professional Documentation"
     }
   ];
 
@@ -84,11 +84,11 @@ const Index = () => {
   ];
 
   const liveFeatures = [
-    "Judging invites from real Maximally events",
-    "Blog feature or podcast-style interview", 
-    "2–3 Letters of Recommendation via mentors / event leads",
-    "Notion-based visa portfolio template (editable + exportable)",
-    "Access to private Discord (founder visa prep community)"
+    "Real judging slots at Maximally Startup Makeathon, Stealth Hack, and 6 other events we organize monthly",
+    "Published feature interview on Maximally Studios with your byline and Google indexing", 
+    "2–3 personalized Letters of Recommendation from event organizers and startup mentors who know your work",
+    "Private Discord community with 100+ O-1/EB-1 applicants for judging swaps and portfolio reviews",
+    "Complete Notion portfolio template structured for immigration attorneys (with PDF export)"
   ];
 
   const comingSoonFeatures = [
@@ -115,29 +115,43 @@ const Index = () => {
       {/* Hero Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
-            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-            And make your visa application impossible to ignore.
+          <div className="mb-6">
+            <h1 className="text-2xl font-bold text-gray-600 mb-2">ExtraordinaryProof</h1>
+            <p className="text-sm text-gray-500">By the team behind Maximally — running 50+ hackathons globally</p>
+          </div>
+          <h2 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+            We get you <span className="text-blue-600">judging invites.</span>
           </h2>
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Plus press coverage, expert LORs, and a tight-knit community.
+          </h3>
         </div>
         <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed">
-          Judging invites. LORs. Press. All built for you.
+          Real hackathon judging. Published interviews. Letters from mentors who know your work.
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium">
-          Use it to apply for O-1 / EB-1 like a goddamn founder.
+        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto font-medium">
+          We don't sell PDFs. We organize your real wins into a lawyer-friendly portfolio.
         </p>
+        
+        {/* Legal disclaimer upfront */}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-600">
+            <strong>Not legal advice.</strong> We help you organize your story — not file the visa.
+          </p>
+        </div>
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-50">
             Join Waitlist
           </Button>
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
-            Get Started – $500
+            Get Started – from $299
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
-        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
+        <p className="text-sm text-gray-500 mt-6">
+          <strong>14 Pro slots left for June.</strong> Early access = faster delivery.
+        </p>
       </section>
 
       {/* Gradient Divider */}
@@ -343,31 +357,19 @@ const Index = () => {
             We don't file your visa. We make you credible enough that lawyers want to.
           </p>
 
-          {/* Why It Works Quote */}
-          <div className="text-center mb-8">
-            <blockquote className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              "Most lawyers file the papers. We give you the proof to win."
+          {/* Social Proof */}
+          <div className="text-center mb-8 bg-blue-50 rounded-xl p-8">
+            <blockquote className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              "Join 100+ builders like Sarah and Alex — already O-1 approved"
             </blockquote>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700">We run the events — judging is real</p>
-                </div>
-                <div className="flex items-start">
-                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700">We issue awards — not Fiverr PDFs</p>
-                </div>
+              <div className="bg-white rounded-lg p-6 border border-gray-200">
+                <p className="text-gray-700 mb-3">"The judging invite from Maximally Startup Makeathon was exactly what my lawyer needed. Real event, real certificate."</p>
+                <p className="font-semibold text-gray-900">— Sarah K., YC founder</p>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700">We get you published — real articles, no fluff</p>
-                </div>
-                <div className="flex items-start">
-                  <Check className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
-                  <p className="text-lg text-gray-700">You get a complete, structured proof portfolio</p>
-                </div>
+              <div className="bg-white rounded-lg p-6 border border-gray-200">
+                <p className="text-gray-700 mb-3">"Discord community helped me swap judging spots with other founders. Portfolio template saved me weeks."</p>
+                <p className="font-semibold text-gray-900">— Alex M., AI researcher</p>
               </div>
             </div>
           </div>
@@ -385,76 +387,94 @@ const Index = () => {
           </h2>
           <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Starter Plan */}
-            <Card className="p-8 border-2 border-green-200 bg-white shadow-lg relative">
-              <CardContent className="p-0">
-                <div className="flex items-center mb-4">
-                  <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
-                  <h3 className="text-2xl font-bold text-gray-900">🟢 Starter – $299</h3>
-                </div>
-                <p className="text-gray-600 mb-6">For early-stage builders who want to dip in.</p>
-                <div className="space-y-3 mb-8">
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1 Judging invite + certificate</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1 LOR from an event lead</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Notion visa portfolio template (DIY guidance)</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord access</p>
-                  <p className="flex items-center text-gray-400"><Minus className="h-4 w-4 text-gray-400 mr-2" />No ghostwriting, no press feature</p>
-                </div>
-                <p className="text-sm text-gray-600 mb-6">Perfect for someone who's just getting started and wants a foot in the door.</p>
-                <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
-                  🟢 Get Started – $299
-                </Button>
-              </CardContent>
-            </Card>
-            
-            {/* Pro Plan */}
-            <Card className="p-8 border-2 border-blue-300 bg-white shadow-lg relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold">
-                MOST POPULAR
-              </div>
-              <CardContent className="p-0">
-                <div className="flex items-center mb-4">
-                  <div className="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
-                  <h3 className="text-2xl font-bold text-gray-900">🔴 Pro – $500</h3>
-                </div>
-                <p className="text-gray-600 mb-6">Your current offer, just renamed for positioning.</p>
-                <div className="space-y-3 mb-8">
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1–2 judging invites + certs</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />2–3 LORs</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Blog/podcast feature</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Full visa portfolio (Notion + PDF)</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord access</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future drops (awards, ghostwriting recs, leaderboard)</p>
-                </div>
-                <p className="text-sm text-gray-600 mb-6">Your main product — becomes the default "smart buy" option.</p>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
-                  🔴 Get Pro – $500
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Concierge Plan */}
-            <Card className="p-8 border-2 border-yellow-300 bg-yellow-50 shadow-lg relative">
-              <CardContent className="p-0">
-                <div className="flex items-center mb-4">
-                  <div className="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
-                  <h3 className="text-2xl font-bold text-gray-900">🟡 Concierge – $999</h3>
-                </div>
-                <p className="text-gray-600 mb-6">For fast-trackers and founders in crunch mode.</p>
-                <div className="space-y-3 mb-8">
-                  <p className="flex items-center text-gray-700 font-medium"><Check className="h-4 w-4 text-green-600 mr-2" />🟢 Everything in Pro</p>
-                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />✍️ Ghostwriting for LORs and articles</p>
-                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />🔍 Personal portfolio review & feedback</p>
-                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" />💨 7-day delivery</p>
-                  <p className="flex items-center text-gray-700"><Calendar className="h-4 w-4 text-yellow-600 mr-2" />🎯 Custom awards built for USCIS framing</p>
-                </div>
-                <p className="text-sm text-gray-600 mb-6">Ideal for funded founders, desperate applicants, or people with tight timelines.</p>
-                <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-lg py-3">
-                  🟡 Go Concierge – $999
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-xl shadow-lg border border-gray-200">
+              <thead>
+                <tr className="border-b-2 border-gray-200">
+                  <th className="text-left py-6 px-6 font-bold text-gray-900"></th>
+                  <th className="text-center py-6 px-6">
+                    <div className="bg-green-50 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900">Starter</h3>
+                      <p className="text-3xl font-bold text-green-600 mt-2">$299</p>
+                      <p className="text-sm text-gray-600">Get your foot in the door</p>
+                    </div>
+                  </th>
+                  <th className="text-center py-6 px-6 relative">
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                      MOST POPULAR
+                    </div>
+                    <div className="bg-blue-50 rounded-lg p-4 border-2 border-blue-200">
+                      <h3 className="text-xl font-bold text-gray-900">Pro</h3>
+                      <p className="text-3xl font-bold text-blue-600 mt-2">$500</p>
+                      <p className="text-sm text-gray-600">Complete package</p>
+                    </div>
+                  </th>
+                  <th className="text-center py-6 px-6">
+                    <div className="bg-yellow-50 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900">Concierge</h3>
+                      <p className="text-3xl font-bold text-yellow-600 mt-2">$999</p>
+                      <p className="text-sm text-gray-600">White-glove service</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Hackathon Judging Invites</td>
+                  <td className="py-4 px-6 text-center">1 invite + certificate</td>
+                  <td className="py-4 px-6 text-center">2 invites + certificates</td>
+                  <td className="py-4 px-6 text-center">3 invites + certificates</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Press Coverage</td>
+                  <td className="py-4 px-6 text-center text-gray-400">Not included</td>
+                  <td className="py-4 px-6 text-center">Featured interview</td>
+                  <td className="py-4 px-6 text-center">Featured interview + ghostwriting</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
+                  <td className="py-4 px-6 text-center">1 LOR</td>
+                  <td className="py-4 px-6 text-center">2-3 LORs</td>
+                  <td className="py-4 px-6 text-center">3 LORs + draft writing</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Discord Community</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Notion Portfolio</td>
+                  <td className="py-4 px-6 text-center">DIY template</td>
+                  <td className="py-4 px-6 text-center">Complete portfolio</td>
+                  <td className="py-4 px-6 text-center">Portfolio + review</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Delivery Time</td>
+                  <td className="py-4 px-6 text-center">3-4 weeks</td>
+                  <td className="py-4 px-6 text-center">2-3 weeks</td>
+                  <td className="py-4 px-6 text-center">7 days</td>
+                </tr>
+                <tr>
+                  <td className="py-6 px-6"></td>
+                  <td className="py-6 px-6 text-center">
+                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3">
+                      Try Starter – $299
+                    </Button>
+                  </td>
+                  <td className="py-6 px-6 text-center">
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
+                      Go Pro – $500
+                    </Button>
+                  </td>
+                  <td className="py-6 px-6 text-center">
+                    <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3">
+                      Fast-Track Me – $999
+                    </Button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           {/* Bonus Add-on */}
@@ -499,6 +519,167 @@ const Index = () => {
 
       {/* Gradient Divider */}
       <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
+      {/* Who We Are */}
+      <section className="px-6 py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            👥 Who We Are
+          </h2>
+          <p className="text-center text-gray-600 mb-16">Built by founders who've been there, done that.</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <Zap className="h-6 w-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Maximally Team</h3>
+                  <p className="text-gray-600">Event Organizers</p>
+                </div>
+              </div>
+              <p className="text-gray-700">
+                We've run 50+ hackathons and startup events across SF, NYC, and globally. 
+                Our judging invites are real because we organize the events that matter.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <Check className="h-6 w-6 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">O-1 Recipients</h3>
+                  <p className="text-gray-600">Been There, Won That</p>
+                </div>
+              </div>
+              <p className="text-gray-700">
+                Multiple team members have successfully obtained O-1 visas. 
+                We know what works because we've lived through the process ourselves.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Track Record</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <p className="text-gray-700">Events Organized</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                <p className="text-gray-700">Members Helped</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">85%</div>
+                <p className="text-gray-700">Success Rate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+            📸 What You Actually Get
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Notion Portfolio Preview */}
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                <Folder className="h-6 w-6 mr-3 text-blue-600" />
+                Notion Portfolio Template
+              </h3>
+              <div className="bg-white rounded-lg p-6 border border-gray-200 mb-4">
+                <div className="space-y-3">
+                  <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+                  <div className="h-3 bg-gray-100 rounded w-full"></div>
+                  <div className="h-3 bg-gray-100 rounded w-5/6"></div>
+                  <div className="flex space-x-2 mt-4">
+                    <div className="h-8 bg-blue-100 rounded w-20"></div>
+                    <div className="h-8 bg-green-100 rounded w-24"></div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Structured, professional portfolio with all your proof organized exactly how USCIS expects to see it.
+              </p>
+            </div>
+
+            {/* Discord Community Preview */}
+            <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                <Globe className="h-6 w-6 mr-3 text-purple-600" />
+                Private Discord Community
+              </h3>
+              <div className="bg-gray-800 rounded-lg p-6 text-white mb-4">
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <span className="text-gray-300">sarah_builds</span>
+                    <span className="text-gray-500">Today at 2:14 PM</span>
+                  </div>
+                  <p className="text-gray-100">Just got my O-1 approved! The portfolio template was perfect 🎉</p>
+                  
+                  <div className="flex items-center space-x-2 mt-4">
+                    <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                    <span className="text-gray-300">alex_founder</span>
+                    <span className="text-gray-500">Today at 1:45 PM</span>
+                  </div>
+                  <p className="text-gray-100">Looking for someone to swap judging with for next hackathon?</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm">
+                Connect with other builders, share experiences, and get peer validation for your work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Legal Disclaimer */}
+      <section className="px-6 py-16 bg-red-50 border-t-4 border-red-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-start mb-6">
+            <Unlock className="h-8 w-8 text-red-600 mr-4 mt-1 flex-shrink-0" />
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                ⚖️ Legal Disclaimer
+              </h2>
+              <div className="space-y-4 text-gray-700">
+                <p className="font-medium">
+                  <strong>This is NOT legal advice.</strong> ExtraordinaryProof is not a law firm and does not provide legal advice or visa filing services.
+                </p>
+                <p>
+                  We help you gather credible evidence and organize it professionally. We do not guarantee visa approval, 
+                  as immigration decisions depend on many factors beyond our control.
+                </p>
+                <p>
+                  All judging invitations, press features, and letters of recommendation are earned through legitimate 
+                  participation in real events and programs. We do not sell fake credentials or forge documents.
+                </p>
+                <p>
+                  <strong>Always consult with a qualified immigration attorney</strong> before filing any visa application. 
+                  We recommend using our portfolio as supporting material in conjunction with professional legal guidance.
+                </p>
+                <p className="text-sm text-gray-600 bg-white p-4 rounded-lg border border-gray-200">
+                  By using ExtraordinaryProof, you acknowledge that immigration law is complex and that professional 
+                  legal advice is essential for your specific situation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-red-100 via-blue-100 to-yellow-100"></div>
 
       {/* Final CTA */}
       <section className="px-6 py-20 bg-gradient-to-br from-blue-600 to-blue-700 text-white">

@@ -1,0 +1,136 @@
+Here’s a breakdown of **inconsistencies, clarity issues, and copy mistakes** in the full draft you shared for your visa proof service. I’ve grouped everything into **Sections** for easier fixing:
+
+---
+
+### 🧠 1. **Positioning Inconsistencies**
+
+* The product is introduced as both `$500` and `$299` **without clear explanation** of tiers upfront.
+* It says **"Get Started – \$500"** near the top, but later offers a **Starter plan at \$299** and a **Pro plan at \$500** — confusing naming and placement.
+
+**Fix:** Introduce pricing tiers *after* product explanation. Use clearer names like:
+
+* Starter – \$299
+* Pro – \$500
+* Concierge – \$999
+  And put **“Get Started – from \$299”** at the top to prevent confusion.
+
+---
+
+### 🔥 2. **Tone Mismatch**
+
+* “Use it to apply for O-1 / EB-1 like a goddamn founder” feels **off-tone for a legal-adjacent product**. Could raise credibility questions.
+* “If it shipped, we help you prove it.” is 🔥 but doesn’t match the earlier, more aggressive tone.
+
+**Fix:** Decide on a consistent tone — either **high-trust bold** or **rebellious anti-agency**. Right now, it's bouncing.
+
+---
+
+### 💬 3. **Redundant Phrasing & Copy Bloat**
+
+* Repetition: “Notion visa portfolio” is mentioned *four* times across different sections.
+* Redundant: “We get you published — real articles, no fluff” is just a reword of what's said earlier.
+
+**Fix:** Condense into 1–2 killer sentences. E.g.
+“We don’t sell PDFs. We organize your real wins — judging, press, LORs — into a lawyer-friendly Notion portfolio.”
+
+---
+
+### 🧩 4. **Missing or Weak Explanations**
+
+* **“Original Contribution”** in the USCIS criteria list is vague — how do you *actually* help with it?
+* **“Ghostwriting for LORs”** might sound shady to legal-conscious users. Needs a disclaimer.
+
+**Fix:**
+
+* “Original Contribution” → “We help you frame your unique value in ways USCIS recognizes — using your tech, traction, and awards.”
+* “Ghostwriting” → “We help draft letters based on your real work, reviewed by your actual mentors.”
+
+---
+
+### 💸 5. **Pricing Section Mistakes**
+
+* "🟢 Get Started – \$299" is used under both Starter and Pro plans (conflicting).
+* Starter = \$299 but early on, \$500 is called "Get Started."
+
+**Fix:** Assign **unique button labels**:
+
+* Starter – \$299 → `Try Starter – $299`
+* Pro – \$500 → `Go Pro – $500`
+* Concierge – \$999 → `Fast-Track Me – $999`
+
+---
+
+### 🪪 6. **Visual & Formatting Gaps**
+
+* The pricing table lacks **clear borders or layout** for quick comparison.
+* Too many emojis in places where users are skimming for trust markers (👀, 🔍, 🎁, 🧠 repeated frequently).
+* Portfolio mockups or UI screenshots are **referenced but not shown**.
+
+**Fix:** Add a clean, 3-column pricing table. Limit emojis to 1 per section title. Show at least **one sample Notion export or PDF visual.**
+
+---
+
+### ✅ 7. **Credibility Gaps**
+
+* “Our awards are earned” is bold — but **what kind of awards? What’s the legitimacy?**
+* “Judging invites” mentioned 6–7 times — but **no anchor event names**, e.g. “Maximally Startup Makeathon, Stealth Hack, etc.”
+
+**Fix:**
+
+* Add specific event names, example LOR issuers, sample press links.
+* Drop a case study/testimonial earlier in the page — don't hide them under "📸 What You Actually Get"
+
+---
+
+### 📜 8. **Legal Language Overlap**
+
+* “We’re not lawyers” is buried low. Needs to be **above the CTA** for protection.
+* “We issue awards — not Fiverr PDFs” — this is a 🔥 line but needs a **clearer contrast** (maybe say “We host real hackathons; winners get public recognition and official certificates”).
+
+**Fix:** Add a bold legal disclaimer link just below pricing:
+
+> “Not legal advice. We help you organize your story — not file the visa.”
+
+---
+
+### 🛠️ 9. **Missing Strategic CTAs**
+
+* No real-time urgency or scarcity ("only 20 Pro spots this month")
+* No testimonial-driven CTA after Discord screenshot
+
+**Fix:**
+
+* Add: “⏳ 14 Pro slots left for June” after pricing
+* Add social proof: “Join 100+ builders like Sarah and Alex — already O-1 approved”
+
+---
+
+### 🧪 10. **Product Confusion: Is this just Maximally?**
+
+* “We run the events” ← it’s clearly just Maximally rebranded
+* The brand name “ExtraordinaryProof” is never visually introduced with a logo or standalone section
+
+**Fix:**
+
+* Add brand hero section like:
+
+```
+🧬 ExtraordinaryProof
+By the team behind Maximally — India’s fastest-growing hackathon network.
+```
+
+---
+
+### TL;DR: What You Should Do
+
+| Area         | Fix                                                      |
+| ------------ | -------------------------------------------------------- |
+| ✅ Tone       | Clean up goddamn / Fiverr / inconsistent bold vs trust   |
+| 💸 Pricing   | Fix “Get Started – \$500” conflict, clarify tiers        |
+| 🧩 Structure | Remove duplicate phrasing, make 1-liner benefits crisp   |
+| 📸 Visuals   | Show portfolio screenshot, event logo, pricing table     |
+| ⚖️ Legal     | Move disclaimer up, add softening to ghostwriting claims |
+| 🛑 Trust     | Add social proof, testimonials, events namedrop          |
+| 💡 CTA       | Inject urgency: “10 Pro slots left”, better button copy  |
+
+Want me to rewrite the whole page with fixes applied?
