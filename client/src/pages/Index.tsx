@@ -139,12 +139,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white">
       {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground p-4 shadow-lg z-40 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-blue-600 text-white p-4 shadow-lg z-40 md:hidden">
         <div className="flex items-center justify-between max-w-sm mx-auto">
           <span className="font-semibold">Ready to get started?</span>
-          <Button size="sm" className="bg-primary-foreground text-primary hover:bg-muted"
+          <Button size="sm" className="bg-white text-blue-600 hover:bg-gray-100"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
             Get Started – $299
           </Button>
@@ -162,81 +162,81 @@ const Index = () => {
       />
 
       {/* Navigation Header */}
-      <nav className="px-6 py-4 bg-background border-b border-border sticky top-0 z-50">
+      <nav className="px-6 py-4 bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">🚀</div>
-            <span className="text-xl font-bold text-foreground">Extraordinary Club</span>
+            <div className="text-2xl font-bold text-blue-600">🚀</div>
+            <span className="text-xl font-bold text-gray-900">Extraordinary Club</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-muted-foreground hover:text-primary font-medium">
+            <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
               Home
             </Link>
-            <Link href="/blog" className="text-muted-foreground hover:text-primary font-medium">
+            <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
               Blog
             </Link>
-            <a href="#pricing" className="text-muted-foreground hover:text-primary font-medium cursor-pointer">
+            <a href="#pricing" className="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">
               Pricing
             </a>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            <Button size="sm" className="bg-blue-600 hover:bg-blue-700"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started – $299
             </Button>
           </div>
-          <Button variant="ghost" size="sm" className="md:hidden text-foreground">
+          <Button variant="ghost" size="sm" className="md:hidden">
             <Menu className="h-5 w-5" />
           </Button>
         </div>
       </nav>
       {/* Hero Section */}
-      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-background to-muted">
+      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6 tracking-tight leading-tight">
-            🚀 Prove you're <span className="text-primary">extraordinary.</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
             Join the visa accelerator for founders, makers, and researchers.<br />
             Judging invites, press features, LORs — you participate, we organize.
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 shadow-lg"
+          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
             Get Started – from $299
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-primary text-primary hover:bg-muted"
+          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-50"
                   onClick={() => window.open('https://calendly.com/extraordinaryclub', '_blank')}>
             Schedule a Call
           </Button>
         </div>
-        <p className="text-sm text-muted-foreground mt-6">✅ You don't need a lawyer yet. You need proof.</p>
+        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-primary via-foreground to-accent"></div>
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* How It Works */}
-      <section className="px-6 py-20 bg-muted how-it-works">
+      <section className="px-6 py-20 bg-gray-50 how-it-works">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             🛠️ How It Works
           </h2>
-          <p className="text-center text-muted-foreground mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
+          <p className="text-center text-gray-600 mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center bg-card rounded-xl p-6 shadow-sm border border-border">
-                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {index + 1}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-card-foreground">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-gray-600 mb-4">
                   {step.description}
                 </p>
-                <div className="bg-secondary border border-border rounded-lg p-3">
-                  <p className="text-sm font-medium text-secondary-foreground">
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                  <p className="text-sm font-medium text-green-800">
                     ✅ {step.criteria}
                   </p>
                 </div>
@@ -247,28 +247,28 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-accent via-primary to-foreground"></div>
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
 
       {/* Who This Is For */}
-      <section className="px-6 py-20 bg-background">
+      <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center mb-4">
-            <Target className="h-8 w-8 text-primary mr-4" />
-            <h2 className="text-4xl font-bold text-foreground">🎯 Who Is This For?</h2>
+            <Target className="h-8 w-8 text-blue-600 mr-4" />
+            <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
           </div>
-          <p className="text-center text-muted-foreground mb-4">Built for ambitious builders across tech, research, content, and ops — if you've shipped, we'll prove it.</p>
-          <p className="text-center text-muted-foreground mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
+          <p className="text-center text-gray-600 mb-4">Built for ambitious builders across tech, research, content, and ops — if you've shipped, we'll prove it.</p>
+          <p className="text-center text-gray-500 mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
-              <div key={index} className="flex items-start bg-muted rounded-lg p-4">
-                <Check className="h-6 w-6 text-primary mr-4 mt-0.5 flex-shrink-0" />
-                <p className="text-lg text-muted-foreground">{audience}</p>
+              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-4">
+                <Check className="h-6 w-6 text-green-600 mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-lg text-gray-700">{audience}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center bg-primary text-primary-foreground rounded-xl p-8 shadow-lg">
+          <div className="text-center bg-blue-600 text-white rounded-xl p-8 shadow-lg">
             <p className="text-xl font-medium">
               Whether you built the backend, scaled the product, ran the experiments, or designed the campaign — if it shipped, we help you prove it.
             </p>
@@ -277,66 +277,66 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-foreground via-accent to-primary"></div>
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* What You Get */}
-      <section className="px-6 py-20 bg-background">
+      <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
             🎁 What You Get
           </h2>
 
           {/* USCIS Criteria Breakdown */}
-          <div className="mb-16 bg-muted border-2 border-border rounded-xl p-8 shadow-sm">
-            <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center">
+          <div className="mb-16 bg-blue-50 border-2 border-blue-200 rounded-xl p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center">
               🔍 What USCIS Actually Wants — and What We Deliver
             </h3>
-            <p className="text-muted-foreground mb-8">We reverse-engineered their checklist. Here's how we stack up:</p>
+            <p className="text-gray-600 mb-8">We reverse-engineered their checklist. Here's how we stack up:</p>
             
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-border">
-                    <th className="text-left py-3 px-4 font-bold text-foreground">USCIS Requirement</th>
-                    <th className="text-left py-3 px-4 font-bold text-foreground">Priority</th>
-                    <th className="text-left py-3 px-4 font-bold text-foreground">What You Get</th>
+                  <tr className="border-b-2 border-blue-200">
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">USCIS Requirement</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">Priority</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">What You Get</th>
                   </tr>
                 </thead>
                 <tbody className="space-y-2">
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Judging Experience</td>
-                    <td className="py-4 px-4 text-primary">🔥🔥🔥</td>
-                    <td className="py-4 px-4 text-muted-foreground">Real hackathon judging invites with certificates</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Judging Experience</td>
+                    <td className="py-4 px-4">🔥🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">Real hackathon judging invites with certificates</td>
                   </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Published Press Feature</td>
-                    <td className="py-4 px-4 text-primary">🔥🔥</td>
-                    <td className="py-4 px-4 text-muted-foreground">Blog or podcast interview, Google-indexed</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Published Press Feature</td>
+                    <td className="py-4 px-4">🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">Blog or podcast interview, Google-indexed</td>
                   </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Expert LORs</td>
-                    <td className="py-4 px-4 text-primary">🔥🔥</td>
-                    <td className="py-4 px-4 text-muted-foreground">2–3 personalized recommendation letters</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Expert LORs</td>
+                    <td className="py-4 px-4">🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">2–3 personalized recommendation letters</td>
                   </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Community Validation</td>
-                    <td className="py-4 px-4 text-muted-foreground">Medium</td>
-                    <td className="py-4 px-4 text-muted-foreground">Private Discord with other O-1/EB-1 applicants</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Community Validation</td>
+                    <td className="py-4 px-4">Medium</td>
+                    <td className="py-4 px-4 text-gray-700">Private Discord with other O-1/EB-1 applicants</td>
                   </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Original Contribution Proof</td>
-                    <td className="py-4 px-4 text-muted-foreground">Tricky</td>
-                    <td className="py-4 px-4 text-muted-foreground">Strategic phrasing inside press + LORs</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Original Contribution Proof</td>
+                    <td className="py-4 px-4">Tricky</td>
+                    <td className="py-4 px-4 text-gray-700">Strategic phrasing inside press + LORs</td>
                   </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Organized Portfolio</td>
-                    <td className="py-4 px-4 text-primary">💥</td>
-                    <td className="py-4 px-4 text-muted-foreground">Notion + PDF export, structured for immigration</td>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Organized Portfolio</td>
+                    <td className="py-4 px-4">💥</td>
+                    <td className="py-4 px-4 text-gray-700">Notion + PDF export, structured for immigration</td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-4 font-medium text-foreground">✅ Authorship Credit</td>
-                    <td className="py-4 px-4 text-muted-foreground">Bonus</td>
-                    <td className="py-4 px-4 text-muted-foreground">Feature byline credited to you</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Authorship Credit</td>
+                    <td className="py-4 px-4">Bonus</td>
+                    <td className="py-4 px-4 text-gray-700">Feature byline credited to you</td>
                   </tr>
                 </tbody>
               </table>
@@ -393,110 +393,110 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-primary via-accent to-foreground"></div>
+      <div className="h-2 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100"></div>
 
       {/* Pricing */}
-      <section id="pricing" className="px-6 py-20 bg-muted">
+      <section id="pricing" className="px-6 py-20 bg-yellow-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             💰 Pricing
           </h2>
-          <p className="text-center text-muted-foreground mb-16">Limited slots each month. Early access = faster delivery.</p>
+          <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
           
           <div className="overflow-x-auto">
-            <table className="w-full bg-card rounded-xl shadow-lg border border-border">
+            <table className="w-full bg-white rounded-xl shadow-lg border border-gray-200">
               <thead>
-                <tr className="border-b-2 border-border">
-                  <th className="text-left py-6 px-6 font-bold text-foreground"></th>
+                <tr className="border-b-2 border-gray-200">
+                  <th className="text-left py-6 px-6 font-bold text-gray-900"></th>
                   <th className="text-center py-6 px-6">
-                    <div className="bg-secondary rounded-lg p-4">
-                      <h3 className="text-xl font-bold text-foreground">Starter</h3>
-                      <p className="text-3xl font-bold text-primary mt-2">$299</p>
-                      <p className="text-sm text-muted-foreground">Get your foot in the door</p>
+                    <div className="bg-green-50 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900">Starter</h3>
+                      <p className="text-3xl font-bold text-green-600 mt-2">$299</p>
+                      <p className="text-sm text-gray-600">Get your foot in the door</p>
                     </div>
                   </th>
                   <th className="text-center py-6 px-6 relative">
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
                       MOST POPULAR
                     </div>
-                    <div className="bg-muted rounded-lg p-4 border-2 border-primary">
-                      <h3 className="text-xl font-bold text-foreground">Pro</h3>
-                      <p className="text-3xl font-bold text-primary mt-2">$500</p>
-                      <p className="text-sm text-muted-foreground">Complete package</p>
+                    <div className="bg-blue-50 rounded-lg p-4 border-2 border-blue-200">
+                      <h3 className="text-xl font-bold text-gray-900">Pro</h3>
+                      <p className="text-3xl font-bold text-blue-600 mt-2">$500</p>
+                      <p className="text-sm text-gray-600">Complete package</p>
                     </div>
                   </th>
                   <th className="text-center py-6 px-6">
-                    <div className="bg-secondary rounded-lg p-4">
-                      <h3 className="text-xl font-bold text-foreground">Concierge</h3>
-                      <p className="text-3xl font-bold text-foreground mt-2">$999</p>
-                      <p className="text-sm text-muted-foreground">White-glove service</p>
+                    <div className="bg-yellow-50 rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-gray-900">Concierge</h3>
+                      <p className="text-3xl font-bold text-yellow-600 mt-2">$999</p>
+                      <p className="text-sm text-gray-600">White-glove service</p>
                     </div>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Real Hackathon Judging</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">1 invite</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">3 invites</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">6 invites</span></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Real Hackathon Judging</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 invite</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 3 invites</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 6 invites</td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Press Feature</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Feature</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Co-authored</span></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Press Feature</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Feature</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Co-authored</td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Letters of Recommendation</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">1 LOR</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">2–3 LORs</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">5 + draft help</span></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 LOR</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 2–3 LORs</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 5 + draft help</td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Notion Portfolio</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Template</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Full version</span></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Reviewed</span></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Notion Portfolio</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Template</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Full version</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Reviewed</td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Delivery Time</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">3–4 weeks</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">1–2 weeks</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">7 days</td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Delivery Time</td>
+                  <td className="py-4 px-6 text-center">3–4 weeks</td>
+                  <td className="py-4 px-6 text-center">1–2 weeks</td>
+                  <td className="py-4 px-6 text-center">7 days</td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Discord Access</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Discord Access</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Portfolio Review</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Portfolio Review</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-border">
-                  <td className="py-4 px-6 font-medium text-foreground">Live Support</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
-                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Call Support</span></td>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Live Support</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Call Support</td>
                 </tr>
                 <tr>
                   <td className="py-6 px-6"></td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3">
                       Get Started – $299
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
                       Get Started – $500
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                    <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3">
                       Schedule a Call
                     </Button>
                   </td>
@@ -507,10 +507,10 @@ const Index = () => {
 
           {/* Bonus Add-on */}
           <div className="mt-12 max-w-2xl mx-auto">
-            <div className="bg-secondary border-2 border-border rounded-xl p-6 text-center">
-              <h4 className="text-xl font-bold text-foreground mb-3">💼 Bonus Add-on:</h4>
-              <h5 className="text-lg font-semibold text-foreground mb-2">"Lawyer-Ready Review" – $149</h5>
-              <p className="text-muted-foreground">Portfolio check + polish by an immigration consultant before you apply</p>
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-6 text-center">
+              <h4 className="text-xl font-bold text-gray-900 mb-3">💼 Bonus Add-on:</h4>
+              <h5 className="text-lg font-semibold text-gray-800 mb-2">"Lawyer-Ready Review" – $149</h5>
+              <p className="text-gray-600">Portfolio check + polish by an immigration consultant before you apply</p>
             </div>
           </div>
         </div>
