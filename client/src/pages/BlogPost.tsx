@@ -1,5 +1,6 @@
 import { useRoute } from 'wouter';
 import { SEO } from '@/components/SEO';
+import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Calendar, Clock, User, Share2 } from 'lucide-react';
@@ -558,6 +559,8 @@ The hardest part isn't having the qualifications – it's learning to present yo
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

@@ -266,6 +266,8 @@ const Blog = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
