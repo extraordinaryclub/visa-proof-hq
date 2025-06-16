@@ -1,4 +1,3 @@
-
 import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -301,6 +300,64 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
             🎁 What You Get
           </h2>
+
+          {/* USCIS Criteria Breakdown */}
+          <div className="mb-16 bg-blue-50 border-2 border-blue-200 rounded-xl p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+              🔍 What USCIS Actually Wants — and What We Deliver
+            </h3>
+            <p className="text-gray-600 mb-8">We reverse-engineered their checklist. Here's how we stack up:</p>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-blue-200">
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">🧩 Category</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">🔥 Priority</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">✅ What You Get</th>
+                  </tr>
+                </thead>
+                <tbody className="space-y-2">
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Judging</td>
+                    <td className="py-4 px-4">🔥🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">✅ Fully covered — official Maximally invite + certificate</td>
+                  </tr>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Press / Published Material</td>
+                    <td className="py-4 px-4">🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">✅ Blog/podcast-style interview about your work</td>
+                  </tr>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Letters of Recommendation</td>
+                    <td className="py-4 px-4">🔥🔥</td>
+                    <td className="py-4 px-4 text-gray-700">✅ 2–3 LORs from real mentors or event leads</td>
+                  </tr>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Exclusive Community</td>
+                    <td className="py-4 px-4">Medium</td>
+                    <td className="py-4 px-4 text-gray-700">✅ Access to our private Discord (peer validation, swaps)</td>
+                  </tr>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Original Contribution</td>
+                    <td className="py-4 px-4">Tricky but powerful</td>
+                    <td className="py-4 px-4 text-gray-700">✅ We help frame your story + proof inside the press + LORs</td>
+                  </tr>
+                  <tr className="border-b border-blue-100">
+                    <td className="py-4 px-4 font-medium text-gray-900">Portfolio Structure</td>
+                    <td className="py-4 px-4">💥 Critical</td>
+                    <td className="py-4 px-4 text-gray-700">✅ Notion + PDF export built for lawyers & case officers</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4 font-medium text-gray-900">Authorship of Articles</td>
+                    <td className="py-4 px-4">Nice-to-have</td>
+                    <td className="py-4 px-4 text-gray-700">✅ You're featured — and credited — in your own story</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <div className="space-y-6 mb-12">
             {features.map((feature, index) => {
               const IconComponent = feature.icon;
