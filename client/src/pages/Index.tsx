@@ -1,5 +1,3 @@
-This file removes the Maximally team reference from the footer and removes the Screenshots section and some testimonial content.
-```typescript
 import { Check, ArrowRight, Plus, Minus, Zap, Newspaper, PenLine, Folder, Globe, Clock, Target, Calendar, Unlock, Menu } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Footer } from "@/components/Footer";
