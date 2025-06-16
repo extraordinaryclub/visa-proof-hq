@@ -67,19 +67,23 @@ const Index = () => {
   const steps = [
     {
       title: "🔓 Join the Club",
-      description: "Pay once, get lifetime access"
+      description: "Pay once. Lifetime access. No recurring fees.",
+      criteria: "Locks in judging access, interview pipeline, and LOR process."
     },
     {
       title: "🚀 We Build Your Proof", 
-      description: "Judging spots, awards, press, LORs"
+      description: "We set you up for real judging, get you published, draft expert letters.",
+      criteria: "Covers USCIS Criteria #2, #3, and #6."
     },
     {
       title: "📦 Portfolio Delivered",
-      description: "Notion + PDF export"
+      description: "We ship a ready-to-send PDF + Notion doc — USCIS-aligned.",
+      criteria: "Structured for lawyers, case officers, and RFE-proofing."
     },
     {
       title: "🎯 You Apply With Confidence",
-      description: "Use it with your lawyer or solo"
+      description: "Use our assets + your lawyer. Or go solo. Either way, you're covered.",
+      criteria: "Complete documentation package ready for submission."
     }
   ];
 
@@ -115,11 +119,8 @@ const Index = () => {
           Use it to apply for O-1 / EB-1 like a founder.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-50">
-            Join Waitlist
-          </Button>
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
-            Just Get Started
+            Get Started Now
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
@@ -145,9 +146,14 @@ const Index = () => {
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">
                   {step.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 mb-4">
                   {step.description}
                 </p>
+                <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                  <p className="text-sm font-medium text-green-800">
+                    ✅ {step.criteria}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -343,40 +349,52 @@ const Index = () => {
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Hackathon Judging Invites</td>
-                  <td className="py-4 px-6 text-center">1 invite + certificate</td>
-                  <td className="py-4 px-6 text-center">2 invites + certificates</td>
-                  <td className="py-4 px-6 text-center">3 invites + certificates</td>
+                  <td className="py-4 px-6 font-medium text-gray-900">Real Hackathon Judging</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 invite</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 3 invites</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 6 invites</td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Press Coverage</td>
-                  <td className="py-4 px-6 text-center text-gray-400">Not included</td>
-                  <td className="py-4 px-6 text-center">Featured interview</td>
-                  <td className="py-4 px-6 text-center">Featured interview + ghostwriting</td>
+                  <td className="py-4 px-6 font-medium text-gray-900">Press Feature</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Feature</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Ghostwritten</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
-                  <td className="py-4 px-6 text-center">1 LOR</td>
-                  <td className="py-4 px-6 text-center">2-3 LORs</td>
-                  <td className="py-4 px-6 text-center">3 LORs + draft writing</td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Discord Community</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 LOR</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 2–3 LORs</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 5 + draft help</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 font-medium text-gray-900">Notion Portfolio</td>
-                  <td className="py-4 px-6 text-center">DIY template</td>
-                  <td className="py-4 px-6 text-center">Complete portfolio</td>
-                  <td className="py-4 px-6 text-center">Portfolio + review</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Template</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Full version</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Reviewed</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 font-medium text-gray-900">Delivery Time</td>
-                  <td className="py-4 px-6 text-center">3-4 weeks</td>
-                  <td className="py-4 px-6 text-center">2-3 weeks</td>
+                  <td className="py-4 px-6 text-center">3–4 weeks</td>
+                  <td className="py-4 px-6 text-center">1–2 weeks</td>
                   <td className="py-4 px-6 text-center">7 days</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Discord Access</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Portfolio Review</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="py-4 px-6 font-medium text-gray-900">Live Support</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Call Support</td>
                 </tr>
                 <tr>
                   <td className="py-6 px-6"></td>
@@ -413,6 +431,31 @@ const Index = () => {
 
       {/* Gradient Divider */}
       <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
+
+      {/* Legality & Transparency Callout */}
+      <section className="px-6 py-12 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 border-2 border-green-300 rounded-xl p-8 shadow-lg">
+            <div className="flex items-start space-x-4">
+              <div className="text-3xl">🛡️</div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  We only build real, earned proof.
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  All judging, press, and LORs are based on real participation in vetted startup programs. No fake credentials. Ever.
+                </p>
+                <p className="text-lg text-gray-700 mt-3 font-medium">
+                  This earns you legal safety and emotional trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
 
       {/* FAQs */}
       <section className="px-6 py-20 bg-white">
