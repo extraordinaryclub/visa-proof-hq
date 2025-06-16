@@ -599,7 +599,7 @@ const Index = () => {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p className="font-medium">
-                  <strong>This is NOT legal advice.</strong> ExtraordinaryProof is not a law firm and does not provide legal advice or visa filing services.
+                  <strong>This is NOT legal advice.</strong> ExtraordinaryClub is not a law firm and does not provide legal advice or visa filing services.
                 </p>
                 <p>
                   We help you gather credible evidence and organize it professionally. We do not guarantee visa approval, 
@@ -614,7 +614,7 @@ const Index = () => {
                   We recommend using our portfolio as supporting material in conjunction with professional legal guidance.
                 </p>
                 <p className="text-sm text-gray-600 bg-white p-4 rounded-lg border border-gray-200">
-                  By using ExtraordinaryProof, you acknowledge that immigration law is complex and that professional 
+                  By using ExtraordinaryClub, you acknowledge that immigration law is complex and that professional 
                   legal advice is essential for your specific situation.
                 </p>
               </div>
@@ -649,7 +649,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="px-6 py-8 bg-gray-900 text-center">
-        <p className="text-gray-400">© 2024 ExtraordinaryProof. Building extraordinary futures.</p>
+        <p className="text-gray-400">© 2024 ExtraordinaryClub. Building extraordinary futures.</p>
       </footer>
     </div>
   );
