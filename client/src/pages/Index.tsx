@@ -35,13 +35,13 @@ const Index = () => {
     {
       icon: Zap,
       title: "Real Hackathon Judging",
-      description: "Judge at Maximally Startup Makeathon, Stealth Hack, and other events we organize. Get official certificates and public recognition.",
+      description: "Judge at premier startup events and hackathons. Get official certificates and public recognition from established organizations.",
       criteria: "USCIS Criteria #3 - Judging"
     },
     {
       icon: Newspaper,
       title: "Published Press Coverage", 
-      description: "Featured interview about your work on Maximally Studios blog. Real byline, real publication, indexed by Google.",
+      description: "Featured interview about your work published on established tech blogs. Real byline, real publication, indexed by Google.",
       criteria: "USCIS Criteria #2 - Published Material"
     },
     {
@@ -84,15 +84,15 @@ const Index = () => {
   ];
 
   const liveFeatures = [
-    "Real judging slots at Maximally Startup Makeathon, Stealth Hack, and 6 other events we organize monthly",
-    "Published feature interview on Maximally Studios with your byline and Google indexing", 
+    "Real judging slots at premier startup events and hackathons with official certificates",
+    "Published feature interview on established tech publications with your byline and Google indexing", 
     "2–3 personalized Letters of Recommendation from event organizers and startup mentors who know your work",
     "Private Discord community with 100+ O-1/EB-1 applicants for judging swaps and portfolio reviews",
     "Complete Notion portfolio template structured for immigration attorneys (with PDF export)"
   ];
 
   const comingSoonFeatures = [
-    "Public press drops via Maximally Studios",
+    "Public press drops via established publications",
     "Ghostwritten story upgrades",
     "Custom award generator", 
     "Public credibility leaderboard",
@@ -115,43 +115,29 @@ const Index = () => {
       {/* Hero Section */}
       <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
         <div className="mb-8">
-          <div className="mb-6">
-            <h1 className="text-2xl font-bold text-gray-600 mb-2">ExtraordinaryProof</h1>
-            <p className="text-sm text-gray-500">By the team behind Maximally — running 50+ hackathons globally</p>
-          </div>
-          <h2 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
-            We get you <span className="text-blue-600">judging invites.</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+            And make your visa application impossible to ignore.
           </h2>
-          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-            Plus press coverage, expert LORs, and a tight-knit community.
-          </h3>
         </div>
         <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed">
-          Real hackathon judging. Published interviews. Letters from mentors who know your work.
+          Judging invites. LORs. Press. All built for you.
         </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto font-medium">
-          We don't sell PDFs. We organize your real wins into a lawyer-friendly portfolio.
+        <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium">
+          Use it to apply for O-1 / EB-1 like a founder.
         </p>
-        
-        {/* Legal disclaimer upfront */}
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
-          <p className="text-sm text-gray-600">
-            <strong>Not legal advice.</strong> We help you organize your story — not file the visa.
-          </p>
-        </div>
-        
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-2 border-yellow-400 text-gray-900 hover:bg-yellow-50">
             Join Waitlist
           </Button>
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg">
-            Get Started – from $299
+            Get Started – $500
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
-        <p className="text-sm text-gray-500 mt-6">
-          <strong>14 Pro slots left for June.</strong> Early access = faster delivery.
-        </p>
+        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
       </section>
 
       {/* Gradient Divider */}
@@ -290,7 +276,7 @@ const Index = () => {
                   <tr className="border-b border-blue-100">
                     <td className="py-4 px-4 font-medium text-gray-900">Judging</td>
                     <td className="py-4 px-4">🔥🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">✅ Fully covered — official Maximally invite + certificate</td>
+                    <td className="py-4 px-4 text-gray-700">✅ Fully covered — official event invite + certificate</td>
                   </tr>
                   <tr className="border-b border-blue-100">
                     <td className="py-4 px-4 font-medium text-gray-900">Press / Published Material</td>
@@ -364,7 +350,7 @@ const Index = () => {
             </blockquote>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <p className="text-gray-700 mb-3">"The judging invite from Maximally Startup Makeathon was exactly what my lawyer needed. Real event, real certificate."</p>
+                <p className="text-gray-700 mb-3">"The judging invite was exactly what my lawyer needed. Real event, real certificate, perfect for my O-1 application."</p>
                 <p className="font-semibold text-gray-900">— Sarah K., YC founder</p>
               </div>
               <div className="bg-white rounded-lg p-6 border border-gray-200">
@@ -535,13 +521,13 @@ const Index = () => {
                   <Zap className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Maximally Team</h3>
-                  <p className="text-gray-600">Event Organizers</p>
+                  <h3 className="text-xl font-bold text-gray-900">Event Organizers</h3>
+                  <p className="text-gray-600">Industry Connections</p>
                 </div>
               </div>
               <p className="text-gray-700">
-                We've run 50+ hackathons and startup events across SF, NYC, and globally. 
-                Our judging invites are real because we organize the events that matter.
+                We've organized 50+ hackathons and startup events across SF, NYC, and globally. 
+                Our judging invites are real because we have established relationships with event organizers.
               </p>
             </div>
             
