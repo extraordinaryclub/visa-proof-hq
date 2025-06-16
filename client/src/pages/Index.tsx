@@ -132,6 +132,17 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Sticky CTA Bar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-blue-600 text-white p-4 shadow-lg z-40 md:hidden">
+        <div className="flex items-center justify-between max-w-sm mx-auto">
+          <span className="font-semibold">Ready to get started?</span>
+          <Button size="sm" className="bg-white text-blue-600 hover:bg-gray-100"
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
+            Get Started – $299
+          </Button>
+        </div>
+      </div>
+
       <SEO
         title="Extraordinary Club - Get Judging Invites, Press Coverage & Expert Letters for Your O-1 Application"
         description="Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation. Proven system used by 100+ approved applicants."
@@ -161,7 +172,7 @@ const Index = () => {
             </a>
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-              Get Started
+              Get Started – $299
             </Button>
           </div>
           <Button variant="ghost" size="sm" className="md:hidden">
@@ -177,18 +188,18 @@ const Index = () => {
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
             Join the visa accelerator for founders, makers, and researchers.<br />
-            Judging invites, press features, LORs — all legit, all done-for-you.
+            Judging invites, press features, LORs — you participate, we organize.
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-            Get Started Instantly
+            Get Started – from $299
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-50"
-                  onClick={() => document.querySelector('.how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
-            How This Works →
+                  onClick={() => window.open('https://calendly.com/extraordinaryclub', '_blank')}>
+            Schedule a Call
           </Button>
         </div>
         <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
