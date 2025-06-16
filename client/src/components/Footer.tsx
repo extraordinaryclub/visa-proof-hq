@@ -1,3 +1,4 @@
+
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
@@ -16,7 +17,7 @@ export const Footer = () => {
               <span className="text-xl font-bold">Extraordinary Club</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation.
+              The visa accelerator for founders, makers, and researchers. Build an extraordinary O-1 visa portfolio with real judging opportunities, published press coverage, and expert letters of recommendation.
             </p>
             <div className="flex space-x-4">
               <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-gray-900"
@@ -78,12 +79,6 @@ export const Footer = () => {
 
         <Separator className="my-8 bg-gray-700" />
 
-        <div className="text-center mb-6">
-          <p className="text-gray-400 text-sm">
-            Extraordinary Club is powered by the same team behind Maximally — India's fastest-growing startup hackathon network.
-          </p>
-        </div>
-
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-sm">
             © {currentYear} Extraordinary Club. All rights reserved.
@@ -98,7 +93,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Additional SEO Links */}
+        {/* SEO Links */}
         <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="text-sm text-gray-400">
             <p className="mb-2">
