@@ -146,7 +146,7 @@ const Index = () => {
           <span className="font-semibold">Ready to get started?</span>
           <Button size="sm" className="bg-white text-blue-600 hover:bg-gray-100"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-            Get Started – $299
+            Get Started
           </Button>
         </div>
       </div>
@@ -180,7 +180,7 @@ const Index = () => {
             </a>
             <Button size="sm" className="bg-blue-600 hover:bg-blue-700"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-              Get Started – $299
+              Get Started
             </Button>
           </div>
           <Button variant="ghost" size="sm" className="md:hidden">
@@ -202,7 +202,7 @@ const Index = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-            Get Started – from $299
+            Get Started
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
           <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-50"
@@ -778,7 +778,7 @@ const Index = () => {
             <p className="text-sm text-gray-600 mb-6">— Raj M., Full-stack dev + O-1 applicant</p>
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-              Get Started – from $299
+              Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -1047,7 +1047,7 @@ const Index = () => {
             </Button>
             <Button size="lg" className="text-lg px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-lg"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-              Yes, I want to prove I'm extraordinary
+              Get Started
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
