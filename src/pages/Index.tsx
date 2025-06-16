@@ -435,44 +435,91 @@ const Index = () => {
 
       {/* Pricing */}
       <section className="px-6 py-20 bg-yellow-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             💰 Pricing
           </h2>
           <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-8 border-2 border-blue-200 bg-white shadow-lg">
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Starter Plan */}
+            <Card className="p-8 border-2 border-green-200 bg-white shadow-lg relative">
               <CardContent className="p-0">
                 <div className="flex items-center mb-4">
-                  <Unlock className="h-6 w-6 text-blue-600 mr-2" />
-                  <h3 className="text-2xl font-bold text-gray-900">$500 Membership</h3>
+                  <div className="w-4 h-4 bg-green-500 rounded-full mr-2"></div>
+                  <h3 className="text-2xl font-bold text-gray-900">🟢 Starter – $299</h3>
                 </div>
-                <div className="space-y-2 mb-6">
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Lifetime access 🔓</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Judging invite, press feature, 2–3 LORs</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Notion + PDF visa portfolio</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord builder network</p>
-                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future drops: awards, ghostwriting, lawyer recs</p>
+                <p className="text-gray-600 mb-6">For early-stage builders who want to dip in.</p>
+                <div className="space-y-3 mb-8">
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1 Judging invite + certificate</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1 LOR from an event lead</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Notion visa portfolio template (DIY guidance)</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord access</p>
+                  <p className="flex items-center text-gray-400"><Minus className="h-4 w-4 text-gray-400 mr-2" />No ghostwriting, no press feature</p>
                 </div>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
-                  🔵 Get Started – $500
+                <p className="text-sm text-gray-600 mb-6">Perfect for someone who's just getting started and wants a foot in the door.</p>
+                <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
+                  🟢 Get Started – $299
                 </Button>
               </CardContent>
             </Card>
             
-            <Card className="p-8 border-2 border-yellow-300 bg-yellow-100 shadow-lg">
+            {/* Pro Plan */}
+            <Card className="p-8 border-2 border-blue-300 bg-white shadow-lg relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold">
+                MOST POPULAR
+              </div>
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">$999 Concierge</h3>
-                <div className="space-y-2 mb-6">
-                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" />💨 7-day delivery</p>
-                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />✍️ Ghostwriting upgrades</p>
-                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />🔍 Personal portfolio review</p>
+                <div className="flex items-center mb-4">
+                  <div className="w-4 h-4 bg-red-500 rounded-full mr-2"></div>
+                  <h3 className="text-2xl font-bold text-gray-900">🔴 Pro – $500</h3>
                 </div>
+                <p className="text-gray-600 mb-6">Your current offer, just renamed for positioning.</p>
+                <div className="space-y-3 mb-8">
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />1–2 judging invites + certs</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />2–3 LORs</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Blog/podcast feature</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Full visa portfolio (Notion + PDF)</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Discord access</p>
+                  <p className="flex items-center text-gray-700"><Check className="h-4 w-4 text-green-600 mr-2" />Future drops (awards, ghostwriting recs, leaderboard)</p>
+                </div>
+                <p className="text-sm text-gray-600 mb-6">Your main product — becomes the default "smart buy" option.</p>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+                  🔴 Get Pro – $500
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Concierge Plan */}
+            <Card className="p-8 border-2 border-yellow-300 bg-yellow-50 shadow-lg relative">
+              <CardContent className="p-0">
+                <div className="flex items-center mb-4">
+                  <div className="w-4 h-4 bg-yellow-500 rounded-full mr-2"></div>
+                  <h3 className="text-2xl font-bold text-gray-900">🟡 Concierge – $999</h3>
+                </div>
+                <p className="text-gray-600 mb-6">For fast-trackers and founders in crunch mode.</p>
+                <div className="space-y-3 mb-8">
+                  <p className="flex items-center text-gray-700 font-medium"><Check className="h-4 w-4 text-green-600 mr-2" />🟢 Everything in Pro</p>
+                  <p className="flex items-center text-gray-700"><PenLine className="h-4 w-4 text-yellow-600 mr-2" />✍️ Ghostwriting for LORs and articles</p>
+                  <p className="flex items-center text-gray-700"><Target className="h-4 w-4 text-yellow-600 mr-2" />🔍 Personal portfolio review & feedback</p>
+                  <p className="flex items-center text-gray-700"><Zap className="h-4 w-4 text-yellow-600 mr-2" />💨 7-day delivery</p>
+                  <p className="flex items-center text-gray-700"><Calendar className="h-4 w-4 text-yellow-600 mr-2" />🎯 Custom awards built for USCIS framing</p>
+                </div>
+                <p className="text-sm text-gray-600 mb-6">Ideal for funded founders, desperate applicants, or people with tight timelines.</p>
                 <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-lg py-3">
                   🟡 Go Concierge – $999
                 </Button>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Bonus Add-on */}
+          <div className="mt-12 max-w-2xl mx-auto">
+            <div className="bg-gray-100 border-2 border-gray-300 rounded-xl p-6 text-center">
+              <h4 className="text-xl font-bold text-gray-900 mb-3">💼 Bonus Add-on:</h4>
+              <h5 className="text-lg font-semibold text-gray-800 mb-2">"Lawyer-Ready Review" – $149</h5>
+              <p className="text-gray-600">Portfolio check + polish by an immigration consultant before you apply</p>
+            </div>
           </div>
         </div>
       </section>
