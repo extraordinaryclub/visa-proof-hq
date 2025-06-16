@@ -671,10 +671,14 @@ const Index = () => {
           {/* Testimonial CTA */}
           <div className="mt-12 text-center bg-green-50 rounded-xl p-8 border-2 border-green-200">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to join the community?</h3>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-700 mb-4">
               "The Discord alone was worth it. Found 3 judging swaps and got my portfolio reviewed by someone who's already approved."
             </p>
             <p className="text-sm text-gray-600 mb-6">— Jamie L., Biotech founder</p>
+            <p className="text-lg text-gray-700 mb-4">
+              "I've worked with 3 agencies before — this was the first time I saw actual judging invites that were accepted by my attorney. The Notion portfolio was god-tier."
+            </p>
+            <p className="text-sm text-gray-600 mb-6">— Raj M., Full-stack dev + O-1 applicant</p>
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started – from $299
@@ -695,7 +699,10 @@ const Index = () => {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p className="font-medium">
-                  <strong>This is NOT legal advice.</strong> ExtraordinaryClub is not a law firm and does not provide legal advice or visa filing services.
+                  <strong>This is NOT legal advice.</strong> Extraordinary Club is not a law firm and does not provide legal advice or visa filing services.
+                </p>
+                <p className="font-medium">
+                  <strong>We do not file your visa. We only help you build the proof that supports your application.</strong>
                 </p>
                 <p>
                   We help you gather credible evidence and organize it professionally. We do not guarantee visa approval, 
@@ -710,7 +717,7 @@ const Index = () => {
                   We recommend using our portfolio as supporting material in conjunction with professional legal guidance.
                 </p>
                 <p className="text-sm text-gray-600 bg-white p-4 rounded-lg border border-gray-200">
-                  By using ExtraordinaryClub, you acknowledge that immigration law is complex and that professional 
+                  By using Extraordinary Club, you acknowledge that immigration law is complex and that professional 
                   legal advice is essential for your specific situation.
                 </p>
               </div>
@@ -857,6 +864,68 @@ const Index = () => {
                 <Button size="lg" className="bg-green-600 hover:bg-green-700">
                   Start with Full Portfolio
                 </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Happens After You Pay Section */}
+      <section className="px-6 py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            🔁 Your Journey With Us
+          </h2>
+          <p className="text-center text-gray-600 mb-16">Here's exactly what happens after you join:</p>
+          
+          <div className="space-y-8">
+            <div className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-6 flex-shrink-0">
+                0
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Day 0: Fill intake form</h3>
+                <p className="text-gray-600">Complete our detailed intake form so we understand your background, projects, and goals.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-6 flex-shrink-0">
+                1-2
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Day 1–2: Discovery call + judging slot assigned</h3>
+                <p className="text-gray-600">We hop on a call to understand your story and immediately assign your first judging opportunity.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-6 flex-shrink-0">
+                3-7
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Day 3–7: First LOR draft + blog draft</h3>
+                <p className="text-gray-600">We start drafting your letters of recommendation and begin working on your press feature.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-6 flex-shrink-0">
+                10-14
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Day 10–14: Final portfolio export + lawyer-ready review</h3>
+                <p className="text-gray-600">Your complete Notion portfolio is finalized with PDF export and lawyer-ready formatting.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold mr-6 flex-shrink-0">
+                3+
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Week 3+: Access Discord, swap judging, share updates</h3>
+                <p className="text-gray-600">Join our private community to network with other applicants and find additional opportunities.</p>
               </div>
             </div>
           </div>

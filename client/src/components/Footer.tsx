@@ -78,6 +78,12 @@ export const Footer = () => {
 
         <Separator className="my-8 bg-gray-700" />
 
+        <div className="text-center mb-6">
+          <p className="text-gray-400 text-sm">
+            Extraordinary Club is powered by the same team behind Maximally — India's fastest-growing startup hackathon network.
+          </p>
+        </div>
+
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-sm">
             © {currentYear} Extraordinary Club. All rights reserved.
