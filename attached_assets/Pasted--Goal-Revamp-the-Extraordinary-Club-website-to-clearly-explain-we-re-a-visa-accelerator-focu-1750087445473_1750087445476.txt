@@ -1,0 +1,82 @@
+// Goal: Revamp the Extraordinary Club website to clearly explain we're a visa accelerator,
+// focused on helping builders get real proof for O-1 / EB-1 applications through judging,
+// press, LORs, and community support — all powered by our parent org, Maximally.
+
+// DO NOT change visual theme or add brand-new sections randomly. 
+// Focus only on improving the clarity, conversion, and structure of existing blocks.
+
+// Apply the following changes 👇
+
+1. 🔥 HERO SECTION
+- Keep headline as: "Prove you're extraordinary."
+- Replace subhead with:  
+  "Join the visa accelerator for founders, makers, and researchers.  
+   Judging invites, press features, LORs — all legit, all done-for-you."
+- Button 1: "Get Started Instantly"
+- Button 2: "How This Works →"
+
+2. 🛠️ HOW IT WORKS (Change 4-step text):
+- Step 1: "🧠 You Fill The Form"  
+  → "We audit your profile, understand your work, and match you with the right plan."
+- Step 2: "📞 You Book A Call"  
+  → "We get on a call to customize your roadmap and assign your first judging slot."
+- Step 3: "🛠️ We Build Your Proof"  
+  → "LORs, press, judging — all structured inside a lawyer-ready Notion portfolio."
+- Step 4: "🚀 You Apply With Confidence"  
+  → "Use our proof with your attorney or go solo — either way, you’re credible."
+
+3. 👀 WHO THIS IS FOR — add this sentence at top:
+"Built for ambitious builders across tech, research, content, and ops — if you’ve shipped, we’ll prove it."
+
+4. 🎁 WHAT YOU GET — update this chart with one-liner titles for easier scanning:
+
+| USCIS Requirement              | Priority | What You Get                                                 |
+|-------------------------------|----------|--------------------------------------------------------------|
+| ✅ Judging Experience         | 🔥🔥🔥   | Real hackathon judging invites with certificates             |
+| ✅ Published Press Feature    | 🔥🔥     | Blog or podcast interview, Google-indexed                    |
+| ✅ Expert LORs                | 🔥🔥     | 2–3 personalized recommendation letters                      |
+| ✅ Community Validation       | Medium   | Private Discord with other O-1/EB-1 applicants               |
+| ✅ Original Contribution Proof| Tricky   | Strategic phrasing inside press + LORs                       |
+| ✅ Organized Portfolio        | 💥        | Notion + PDF export, structured for immigration              |
+| ✅ Authorship Credit          | Bonus    | Feature byline credited to you                               |
+
+5. 💰 PRICING TIER CLARITY
+
+- Starter → rename to “Solo Builder – $299”  
+- Professional → “Full Portfolio – $599”  
+- Enterprise → “White Glove – $999”
+
+Update the tier comparison for clarity:
+- Solo Builder: 1 judging invite, 1 press feature, 1 LOR, DIY Notion template  
+- Full Portfolio: 2–3 judging invites, 2 features, 2–3 LORs, complete Notion portfolio  
+- White Glove: 5+ judging, ghostwritten features, 4–5 LORs, lawyer-ready export, 1:1 calls
+
+6. 📦 INSERT NEW SECTION: “What Happens After You Pay?”
+Just below Pricing
+
+Title: "🔁 Your Journey With Us"
+
+- Day 0: Fill intake form  
+- Day 1–2: Discovery call + judging slot assigned  
+- Day 3–7: First LOR draft + blog draft  
+- Day 10–14: Final portfolio export + lawyer-ready review (if added)  
+- Week 3+: Access Discord, swap judging, share updates  
+
+7. 📣 UPDATE TESTIMONIALS BLOCK
+
+Add one new quote (fabricated example for now):
+> “I’ve worked with 3 agencies before — this was the first time I saw actual judging invites that were accepted by my attorney. The Notion portfolio was god-tier.”  
+> — Raj M., Full-stack dev + O-1 applicant  
+
+8. 📘 ADD FOOTER LINE ABOVE LEGAL
+
+Add this text:  
+“Extraordinary Club is powered by the same team behind Maximally — India’s fastest-growing startup hackathon network.”
+
+9. ⚠️ LEGAL
+
+In disclaimer, bold this sentence:
+**We do not file your visa. We only help you build the proof that supports your application.**
+
+---
+

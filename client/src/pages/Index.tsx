@@ -69,24 +69,24 @@ const Index = () => {
 
   const steps = [
     {
-      title: "🔓 Join the Club",
-      description: "Pay once. Lifetime access. No recurring fees.",
-      criteria: "Locks in judging access, interview pipeline, and LOR process."
+      title: "🧠 You Fill The Form",
+      description: "We audit your profile, understand your work, and match you with the right plan.",
+      criteria: "Profile assessment and plan matching."
     },
     {
-      title: "🚀 We Build Your Proof", 
-      description: "We set you up for real judging, get you published, draft expert letters.",
-      criteria: "Covers USCIS Criteria #2, #3, and #6."
+      title: "📞 You Book A Call", 
+      description: "We get on a call to customize your roadmap and assign your first judging slot.",
+      criteria: "Personalized roadmap and judging assignment."
     },
     {
-      title: "📦 Portfolio Delivered",
-      description: "We ship a ready-to-send PDF + Notion doc — USCIS-aligned.",
-      criteria: "Structured for lawyers, case officers, and RFE-proofing."
+      title: "🛠️ We Build Your Proof",
+      description: "LORs, press, judging — all structured inside a lawyer-ready Notion portfolio.",
+      criteria: "Complete proof portfolio creation."
     },
     {
-      title: "🎯 You Apply With Confidence",
-      description: "Use our assets + your lawyer. Or go solo. Either way, you're covered.",
-      criteria: "Complete documentation package ready for submission."
+      title: "🚀 You Apply With Confidence",
+      description: "Use our proof with your attorney or go solo — either way, you're credible.",
+      criteria: "Ready-to-submit documentation package."
     }
   ];
 
@@ -176,20 +176,19 @@ const Index = () => {
             🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-            And make your visa application impossible to ignore.
+            Join the visa accelerator for founders, makers, and researchers.<br />
+            Judging invites, press features, LORs — all legit, all done-for-you.
           </h2>
         </div>
-        <p className="text-xl md:text-2xl text-gray-600 mb-4 max-w-4xl mx-auto leading-relaxed">
-          Judging invites. LORs. Press. All built for you.
-        </p>
-        <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto font-medium">
-          Use it to apply for O-1 / EB-1 like a founder.
-        </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
-            Get Started Now
+            Get Started Instantly
             <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-50"
+                  onClick={() => document.querySelector('.how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
+            How This Works →
           </Button>
         </div>
         <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
@@ -199,7 +198,7 @@ const Index = () => {
       <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* How It Works */}
-      <section className="px-6 py-20 bg-gray-50">
+      <section className="px-6 py-20 bg-gray-50 how-it-works">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
             🛠️ How It Works
@@ -238,7 +237,8 @@ const Index = () => {
             <Target className="h-8 w-8 text-blue-600 mr-4" />
             <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
           </div>
-          <p className="text-center text-gray-600 mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
+          <p className="text-center text-gray-600 mb-4">Built for ambitious builders across tech, research, content, and ops — if you've shipped, we'll prove it.</p>
+          <p className="text-center text-gray-500 mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
@@ -278,46 +278,46 @@ const Index = () => {
               <table className="w-full">
                 <thead>
                   <tr className="border-b-2 border-blue-200">
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">🧩 Category</th>
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">🔥 Priority</th>
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">✅ What You Get</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">USCIS Requirement</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">Priority</th>
+                    <th className="text-left py-3 px-4 font-bold text-gray-900">What You Get</th>
                   </tr>
                 </thead>
                 <tbody className="space-y-2">
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Judging</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Judging Experience</td>
                     <td className="py-4 px-4">🔥🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">✅ Fully covered — official event invite + certificate</td>
+                    <td className="py-4 px-4 text-gray-700">Real hackathon judging invites with certificates</td>
                   </tr>
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Press / Published Material</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Published Press Feature</td>
                     <td className="py-4 px-4">🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">✅ Blog/podcast-style interview about your work</td>
+                    <td className="py-4 px-4 text-gray-700">Blog or podcast interview, Google-indexed</td>
                   </tr>
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Letters of Recommendation</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Expert LORs</td>
                     <td className="py-4 px-4">🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">✅ 2–3 LORs from real mentors or event leads</td>
+                    <td className="py-4 px-4 text-gray-700">2–3 personalized recommendation letters</td>
                   </tr>
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Exclusive Community</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Community Validation</td>
                     <td className="py-4 px-4">Medium</td>
-                    <td className="py-4 px-4 text-gray-700">✅ Access to our private Discord (peer validation, swaps)</td>
+                    <td className="py-4 px-4 text-gray-700">Private Discord with other O-1/EB-1 applicants</td>
                   </tr>
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Original Contribution</td>
-                    <td className="py-4 px-4">Tricky but powerful</td>
-                    <td className="py-4 px-4 text-gray-700">✅ We help frame your story + proof inside the press + LORs</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Original Contribution Proof</td>
+                    <td className="py-4 px-4">Tricky</td>
+                    <td className="py-4 px-4 text-gray-700">Strategic phrasing inside press + LORs</td>
                   </tr>
                   <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">Portfolio Structure</td>
-                    <td className="py-4 px-4">💥 Critical</td>
-                    <td className="py-4 px-4 text-gray-700">✅ Notion + PDF export built for lawyers & case officers</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Organized Portfolio</td>
+                    <td className="py-4 px-4">💥</td>
+                    <td className="py-4 px-4 text-gray-700">Notion + PDF export, structured for immigration</td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-4 font-medium text-gray-900">Authorship of Articles</td>
-                    <td className="py-4 px-4">Nice-to-have</td>
-                    <td className="py-4 px-4 text-gray-700">✅ You're featured — and credited — in your own story</td>
+                    <td className="py-4 px-4 font-medium text-gray-900">✅ Authorship Credit</td>
+                    <td className="py-4 px-4">Bonus</td>
+                    <td className="py-4 px-4 text-gray-700">Feature byline credited to you</td>
                   </tr>
                 </tbody>
               </table>
@@ -735,10 +735,10 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Starter Plan */}
+            {/* Solo Builder Plan */}
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8 relative">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Solo Builder</h3>
                 <div className="text-4xl font-bold text-gray-900 mb-2">$299</div>
                 <p className="text-gray-600">One-time payment</p>
               </div>
@@ -746,23 +746,19 @@ const Index = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">1 judging opportunity placement</span>
+                  <span className="text-gray-700">1 judging invite</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">1 published interview/feature</span>
+                  <span className="text-gray-700">1 press feature</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">1 expert letter of recommendation</span>
+                  <span className="text-gray-700">1 LOR</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Portfolio template access</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Discord community access</span>
+                  <span className="text-gray-700">DIY Notion template</span>
                 </li>
               </ul>
               
@@ -771,7 +767,7 @@ const Index = () => {
               </Button>
             </div>
 
-            {/* Professional Plan */}
+            {/* Full Portfolio Plan */}
             <div className="bg-blue-600 text-white rounded-xl p-8 relative transform scale-105 shadow-2xl">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <div className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-bold">
@@ -780,7 +776,7 @@ const Index = () => {
               </div>
               
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-2">Professional</h3>
+                <h3 className="text-2xl font-bold mb-2">Full Portfolio</h3>
                 <div className="text-4xl font-bold mb-2">$599</div>
                 <p className="text-blue-100">One-time payment</p>
               </div>
@@ -788,43 +784,31 @@ const Index = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>2-3 judging opportunity placements</span>
+                  <span>2–3 judging invites</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>2 published interviews/features</span>
+                  <span>2 features</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>2-3 expert letters of recommendation</span>
+                  <span>2–3 LORs</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Complete portfolio template + PDF export</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Discord community access</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Priority support & review</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-yellow-400 mr-3 mt-0.5 flex-shrink-0" />
-                  <span>Immigration lawyer referral network</span>
+                  <span>Complete Notion portfolio</span>
                 </li>
               </ul>
               
               <Button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold">
-                Start Professional
+                Start Full Portfolio
               </Button>
             </div>
 
-            {/* Enterprise Plan */}
+            {/* White Glove Plan */}
             <div className="bg-white border-2 border-gray-200 rounded-xl p-8 relative">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">White Glove</h3>
                 <div className="text-4xl font-bold text-gray-900 mb-2">$999</div>
                 <p className="text-gray-600">One-time payment</p>
               </div>
@@ -832,35 +816,23 @@ const Index = () => {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">5+ judging opportunity placements</span>
+                  <span className="text-gray-700">5+ judging</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">3+ published interviews/features</span>
+                  <span className="text-gray-700">Ghostwritten features</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">4-5 expert letters of recommendation</span>
+                  <span className="text-gray-700">4–5 LORs</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Complete portfolio + lawyer-ready package</span>
+                  <span className="text-gray-700">Lawyer-ready export</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">All community benefits</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">1-on-1 strategy calls</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">Direct lawyer introductions</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-700">White-glove service</span>
+                  <span className="text-gray-700">1:1 calls</span>
                 </li>
               </ul>
               
@@ -876,14 +848,14 @@ const Index = () => {
                 💡 Not sure which plan to choose?
               </h3>
               <p className="text-lg text-gray-700 mb-6">
-                Most successful O-1 applicants start with Professional. It covers all major USCIS criteria and gives you everything you need for a strong application.
+                Most successful O-1 applicants start with Full Portfolio. It covers all major USCIS criteria and gives you everything you need for a strong application.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="outline" className="border-green-600 text-green-600 hover:bg-green-50">
                   Schedule a Call
                 </Button>
                 <Button size="lg" className="bg-green-600 hover:bg-green-700">
-                  Start with Professional
+                  Start with Full Portfolio
                 </Button>
               </div>
             </div>
