@@ -247,28 +247,28 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+      <div className="h-2 bg-gradient-to-r from-accent via-primary to-foreground"></div>
 
       {/* Who This Is For */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-20 bg-background">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center mb-4">
-            <Target className="h-8 w-8 text-blue-600 mr-4" />
-            <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
+            <Target className="h-8 w-8 text-primary mr-4" />
+            <h2 className="text-4xl font-bold text-foreground">🎯 Who Is This For?</h2>
           </div>
-          <p className="text-center text-gray-600 mb-4">Built for ambitious builders across tech, research, content, and ops — if you've shipped, we'll prove it.</p>
-          <p className="text-center text-gray-500 mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
+          <p className="text-center text-muted-foreground mb-4">Built for ambitious builders across tech, research, content, and ops — if you've shipped, we'll prove it.</p>
+          <p className="text-center text-muted-foreground mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
-              <div key={index} className="flex items-start bg-gray-50 rounded-lg p-4">
-                <Check className="h-6 w-6 text-green-600 mr-4 mt-0.5 flex-shrink-0" />
-                <p className="text-lg text-gray-700">{audience}</p>
+              <div key={index} className="flex items-start bg-muted rounded-lg p-4">
+                <Check className="h-6 w-6 text-primary mr-4 mt-0.5 flex-shrink-0" />
+                <p className="text-lg text-muted-foreground">{audience}</p>
               </div>
             ))}
           </div>
 
-          <div className="text-center bg-blue-600 text-white rounded-xl p-8 shadow-lg">
+          <div className="text-center bg-primary text-primary-foreground rounded-xl p-8 shadow-lg">
             <p className="text-xl font-medium">
               Whether you built the backend, scaled the product, ran the experiments, or designed the campaign — if it shipped, we help you prove it.
             </p>
@@ -277,66 +277,66 @@ const Index = () => {
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
+      <div className="h-2 bg-gradient-to-r from-foreground via-accent to-primary"></div>
 
       {/* What You Get */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-20 bg-background">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">
             🎁 What You Get
           </h2>
 
           {/* USCIS Criteria Breakdown */}
-          <div className="mb-16 bg-blue-50 border-2 border-blue-200 rounded-xl p-8 shadow-sm">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+          <div className="mb-16 bg-muted border-2 border-border rounded-xl p-8 shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center">
               🔍 What USCIS Actually Wants — and What We Deliver
             </h3>
-            <p className="text-gray-600 mb-8">We reverse-engineered their checklist. Here's how we stack up:</p>
+            <p className="text-muted-foreground mb-8">We reverse-engineered their checklist. Here's how we stack up:</p>
             
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
-                  <tr className="border-b-2 border-blue-200">
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">USCIS Requirement</th>
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">Priority</th>
-                    <th className="text-left py-3 px-4 font-bold text-gray-900">What You Get</th>
+                  <tr className="border-b-2 border-border">
+                    <th className="text-left py-3 px-4 font-bold text-foreground">USCIS Requirement</th>
+                    <th className="text-left py-3 px-4 font-bold text-foreground">Priority</th>
+                    <th className="text-left py-3 px-4 font-bold text-foreground">What You Get</th>
                   </tr>
                 </thead>
                 <tbody className="space-y-2">
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Judging Experience</td>
-                    <td className="py-4 px-4">🔥🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">Real hackathon judging invites with certificates</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Judging Experience</td>
+                    <td className="py-4 px-4 text-primary">🔥🔥🔥</td>
+                    <td className="py-4 px-4 text-muted-foreground">Real hackathon judging invites with certificates</td>
                   </tr>
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Published Press Feature</td>
-                    <td className="py-4 px-4">🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">Blog or podcast interview, Google-indexed</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Published Press Feature</td>
+                    <td className="py-4 px-4 text-primary">🔥🔥</td>
+                    <td className="py-4 px-4 text-muted-foreground">Blog or podcast interview, Google-indexed</td>
                   </tr>
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Expert LORs</td>
-                    <td className="py-4 px-4">🔥🔥</td>
-                    <td className="py-4 px-4 text-gray-700">2–3 personalized recommendation letters</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Expert LORs</td>
+                    <td className="py-4 px-4 text-primary">🔥🔥</td>
+                    <td className="py-4 px-4 text-muted-foreground">2–3 personalized recommendation letters</td>
                   </tr>
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Community Validation</td>
-                    <td className="py-4 px-4">Medium</td>
-                    <td className="py-4 px-4 text-gray-700">Private Discord with other O-1/EB-1 applicants</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Community Validation</td>
+                    <td className="py-4 px-4 text-muted-foreground">Medium</td>
+                    <td className="py-4 px-4 text-muted-foreground">Private Discord with other O-1/EB-1 applicants</td>
                   </tr>
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Original Contribution Proof</td>
-                    <td className="py-4 px-4">Tricky</td>
-                    <td className="py-4 px-4 text-gray-700">Strategic phrasing inside press + LORs</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Original Contribution Proof</td>
+                    <td className="py-4 px-4 text-muted-foreground">Tricky</td>
+                    <td className="py-4 px-4 text-muted-foreground">Strategic phrasing inside press + LORs</td>
                   </tr>
-                  <tr className="border-b border-blue-100">
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Organized Portfolio</td>
-                    <td className="py-4 px-4">💥</td>
-                    <td className="py-4 px-4 text-gray-700">Notion + PDF export, structured for immigration</td>
+                  <tr className="border-b border-border">
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Organized Portfolio</td>
+                    <td className="py-4 px-4 text-primary">💥</td>
+                    <td className="py-4 px-4 text-muted-foreground">Notion + PDF export, structured for immigration</td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-4 font-medium text-gray-900">✅ Authorship Credit</td>
-                    <td className="py-4 px-4">Bonus</td>
-                    <td className="py-4 px-4 text-gray-700">Feature byline credited to you</td>
+                    <td className="py-4 px-4 font-medium text-foreground">✅ Authorship Credit</td>
+                    <td className="py-4 px-4 text-muted-foreground">Bonus</td>
+                    <td className="py-4 px-4 text-muted-foreground">Feature byline credited to you</td>
                   </tr>
                 </tbody>
               </table>
@@ -404,48 +404,48 @@ const Index = () => {
           <p className="text-center text-gray-600 mb-16">Limited slots each month. Early access = faster delivery.</p>
           
           <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-xl shadow-lg border border-gray-200">
+            <table className="w-full bg-card rounded-xl shadow-lg border border-border">
               <thead>
-                <tr className="border-b-2 border-gray-200">
-                  <th className="text-left py-6 px-6 font-bold text-gray-900"></th>
+                <tr className="border-b-2 border-border">
+                  <th className="text-left py-6 px-6 font-bold text-foreground"></th>
                   <th className="text-center py-6 px-6">
-                    <div className="bg-green-50 rounded-lg p-4">
-                      <h3 className="text-xl font-bold text-gray-900">Starter</h3>
-                      <p className="text-3xl font-bold text-green-600 mt-2">$299</p>
-                      <p className="text-sm text-gray-600">Get your foot in the door</p>
+                    <div className="bg-secondary rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-foreground">Starter</h3>
+                      <p className="text-3xl font-bold text-primary mt-2">$299</p>
+                      <p className="text-sm text-muted-foreground">Get your foot in the door</p>
                     </div>
                   </th>
                   <th className="text-center py-6 px-6 relative">
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
                       MOST POPULAR
                     </div>
-                    <div className="bg-blue-50 rounded-lg p-4 border-2 border-blue-200">
-                      <h3 className="text-xl font-bold text-gray-900">Pro</h3>
-                      <p className="text-3xl font-bold text-blue-600 mt-2">$500</p>
-                      <p className="text-sm text-gray-600">Complete package</p>
+                    <div className="bg-muted rounded-lg p-4 border-2 border-primary">
+                      <h3 className="text-xl font-bold text-foreground">Pro</h3>
+                      <p className="text-3xl font-bold text-primary mt-2">$500</p>
+                      <p className="text-sm text-muted-foreground">Complete package</p>
                     </div>
                   </th>
                   <th className="text-center py-6 px-6">
-                    <div className="bg-yellow-50 rounded-lg p-4">
-                      <h3 className="text-xl font-bold text-gray-900">Concierge</h3>
-                      <p className="text-3xl font-bold text-yellow-600 mt-2">$999</p>
-                      <p className="text-sm text-gray-600">White-glove service</p>
+                    <div className="bg-secondary rounded-lg p-4">
+                      <h3 className="text-xl font-bold text-foreground">Concierge</h3>
+                      <p className="text-3xl font-bold text-foreground mt-2">$999</p>
+                      <p className="text-sm text-muted-foreground">White-glove service</p>
                     </div>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Real Hackathon Judging</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 1 invite</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 3 invites</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> 6 invites</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Real Hackathon Judging</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">1 invite</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">3 invites</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">6 invites</span></td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="py-4 px-6 font-medium text-gray-900">Press Feature</td>
-                  <td className="py-4 px-6 text-center text-gray-400">❌</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Feature</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Co-authored</td>
+                <tr className="border-b border-border">
+                  <td className="py-4 px-6 font-medium text-foreground">Press Feature</td>
+                  <td className="py-4 px-6 text-center text-muted-foreground">❌</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Feature</span></td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-primary mx-auto" /> <span className="text-muted-foreground">Co-authored</span></td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
