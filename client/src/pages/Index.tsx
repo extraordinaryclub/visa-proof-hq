@@ -616,7 +616,7 @@ const Index = () => {
             <div className="bg-gray-50 rounded-xl p-8 border-2 border-gray-200">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                 <Globe className="h-6 w-6 mr-3 text-purple-600" />
-                Private Discord Community
+                Private Discord Community (100+ Members)
               </h3>
               <div className="bg-gray-800 rounded-lg p-6 text-white mb-4">
                 <div className="space-y-2 text-sm">
@@ -625,7 +625,7 @@ const Index = () => {
                     <span className="text-gray-300">sarah_builds</span>
                     <span className="text-gray-500">Today at 2:14 PM</span>
                   </div>
-                  <p className="text-gray-100">Just got my O-1 approved! The portfolio template was perfect 🎉</p>
+                  <p className="text-gray-100">Just got my O-1 approved! The portfolio template was perfect</p>
                   
                   <div className="flex items-center space-x-2 mt-4">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
@@ -633,12 +633,34 @@ const Index = () => {
                     <span className="text-gray-500">Today at 1:45 PM</span>
                   </div>
                   <p className="text-gray-100">Looking for someone to swap judging with for next hackathon?</p>
+                  
+                  <div className="flex items-center space-x-2 mt-4">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                    <span className="text-gray-300">maya_ai_researcher</span>
+                    <span className="text-gray-500">Yesterday at 4:32 PM</span>
+                  </div>
+                  <p className="text-gray-100">Anyone have LOR feedback? Happy to review yours in exchange</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm">
-                Connect with other builders, share experiences, and get peer validation for your work.
-              </p>
+              <div className="space-y-3 text-sm text-gray-600">
+                <p><strong>Active peer network:</strong> Swap judging opportunities with other founders</p>
+                <p><strong>Portfolio reviews:</strong> Get feedback from people who've been approved</p>
+                <p><strong>Real-time support:</strong> Ask questions during your application process</p>
+              </div>
             </div>
+          </div>
+          
+          {/* Testimonial CTA */}
+          <div className="mt-12 text-center bg-green-50 rounded-xl p-8 border-2 border-green-200">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to join the community?</h3>
+            <p className="text-lg text-gray-700 mb-6">
+              "The Discord alone was worth it. Found 3 judging swaps and got my portfolio reviewed by someone who's already approved."
+            </p>
+            <p className="text-sm text-gray-600 mb-6">— Jamie L., Biotech founder</p>
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4">
+              Get Started – from $299
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </section>
