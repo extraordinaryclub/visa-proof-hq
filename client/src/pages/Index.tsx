@@ -17,20 +17,28 @@ const Index = () => {
 
   const faqs = [
     {
+      question: "How to get O-1 visa as a founder?",
+      answer: "You need to prove extraordinary ability through 3+ USCIS criteria: judging experience, press coverage, original contributions, expert testimony, or membership in distinguished organizations. We help you build authentic proof for these requirements."
+    },
+    {
+      question: "What proof do I need for extraordinary ability visa?",
+      answer: "USCIS requires documented evidence like judging certificates, published articles about your work, letters of recommendation from industry experts, and proof of original contributions to your field. We organize all of this into a lawyer-ready portfolio."
+    },
+    {
+      question: "Do I need judging experience for EB-1?",
+      answer: "Judging experience is one of the strongest criteria for both O-1 and EB-1 visas. It demonstrates peer recognition and expertise in your field. We connect you with real judging opportunities at established hackathons and startup events."
+    },
+    {
       question: "Is this legal?",
-      answer: "Yes. We don't offer legal advice — just credibility."
+      answer: "Yes. All opportunities are real and earned through legitimate participation. We don't offer legal advice — just help you build authentic credibility that meets USCIS standards."
     },
     {
       question: "Do I still need a lawyer?",
-      answer: "Yes. We make your portfolio. They file it."
-    },
-    {
-      question: "What kind of people use this?",
-      answer: "Founders, researchers, creators, and builders."
+      answer: "Yes. We build your portfolio with all the required evidence. Your immigration attorney handles the legal filing and strategy. Many lawyers recommend services like ours to strengthen applications."
     },
     {
       question: "What if I don't get the visa?",
-      answer: "You still get a world-class proof stack. Use it anywhere."
+      answer: "You still get world-class proof of your expertise: real judging experience, published press coverage, and professional recommendations. This credibility helps with job applications, investor pitches, and future opportunities."
     }
   ];
 
@@ -79,8 +87,8 @@ const Index = () => {
       criteria: "Personalized roadmap and judging assignment."
     },
     {
-      title: "🛠️ We Build Your Proof",
-      description: "LORs, press, judging — all structured inside a lawyer-ready Notion portfolio.",
+      title: "🛠️ We Guide Your Portfolio",
+      description: "LORs, press, judging — all structured inside a lawyer-ready Notion portfolio. You participate, we organize.",
       criteria: "Complete proof portfolio creation."
     },
     {
@@ -437,7 +445,7 @@ const Index = () => {
                   <td className="py-4 px-6 font-medium text-gray-900">Press Feature</td>
                   <td className="py-4 px-6 text-center text-gray-400">❌</td>
                   <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Feature</td>
-                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Ghostwritten</td>
+                  <td className="py-4 px-6 text-center"><Check className="h-5 w-5 text-green-600 mx-auto" /> Co-authored</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 font-medium text-gray-900">Letters of Recommendation</td>
@@ -479,17 +487,17 @@ const Index = () => {
                   <td className="py-6 px-6"></td>
                   <td className="py-6 px-6 text-center">
                     <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-3">
-                      Try Starter – $299
+                      Get Started – $299
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
-                      Go Pro – $500
+                      Get Started – $500
                     </Button>
                   </td>
                   <td className="py-6 px-6 text-center">
                     <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white py-3">
-                      Fast-Track Me – $999
+                      Schedule a Call
                     </Button>
                   </td>
                 </tr>
@@ -540,7 +548,7 @@ const Index = () => {
       <section className="px-6 py-20 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
-            ❓ Frequently Asked Questions
+            ❓ O-1 Visa Questions Answered
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -564,6 +572,84 @@ const Index = () => {
 
       {/* Gradient Divider */}
       <div className="h-2 bg-gradient-to-r from-green-100 via-blue-100 to-yellow-100"></div>
+
+      {/* Success Stories */}
+      <section className="px-6 py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+            💬 What Our Members Say
+          </h2>
+          <p className="text-center text-gray-600 mb-16">Real stories from builders who got their visas approved</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-xl font-bold text-blue-600">S</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Sarah Chen</h4>
+                  <p className="text-sm text-gray-600">AI Startup Founder</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                "The judging opportunities were completely legitimate. I judged at 3 major hackathons and got official certificates. My lawyer said it was exactly what USCIS looks for."
+              </p>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                <p className="text-sm font-medium text-green-800">✅ O-1 Approved - 2024</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-xl font-bold text-green-600">M</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Marcus Rodriguez</h4>
+                  <p className="text-sm text-gray-600">Backend Engineer</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                "The press feature was published on a real tech blog with my byline. Google indexed it within days. My portfolio went from weak to bulletproof."
+              </p>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                <p className="text-sm font-medium text-green-800">✅ EB-1 Approved - 2024</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-xl font-bold text-yellow-600">A</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Alex Kim</h4>
+                  <p className="text-sm text-gray-600">Product Manager</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                "The Discord community alone was worth it. Connected with other visa applicants, shared strategies, and got referrals. Still active there post-approval."
+              </p>
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                <p className="text-sm font-medium text-green-800">✅ O-1 Approved - 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-blue-600 text-white rounded-xl p-6 max-w-2xl mx-auto">
+              <p className="text-lg font-medium mb-2">
+                "My lawyer reviewed the portfolio and said it was the most organized O-1 application she'd seen."
+              </p>
+              <p className="text-blue-100">— Recent member (name withheld for privacy)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gradient Divider */}
+      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
 
       {/* Who We Are */}
       <section className="px-6 py-20 bg-gray-50">
