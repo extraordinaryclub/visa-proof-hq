@@ -100,11 +100,14 @@ const Index = () => {
   ];
 
   const targetAudience = [
-    "Startup founders building in tech, AI, sustainability, etc.",
-    "Researchers with publications or niche domain work",
-    "Creators or artists with a portfolio but no proof",
-    "Builders aiming for O-1 or EB-1 within the next 12 months",
-    "Anyone tired of overpriced agencies and unclear steps"
+    "Startup founders in tech, AI, climate, consumer, biotech, etc.",
+    "Engineers, developers, or hackers with shipped projects, open-source work, or internal tools",
+    "Researchers with papers, niche domain expertise, or contributions to critical systems",
+    "Creators, designers, or artists with portfolios but no formal recognition",
+    "Product managers, growth leads, operators — anyone who's driven outcomes, even behind the scenes",
+    "Indie makers and freelancers with work across startups, brands, or public platforms",
+    "Hackathon winners, community leaders, or event organizers with real-world credibility",
+    "Builders applying for O-1 or EB-1 within the next 12 months"
   ];
 
   return (
@@ -224,7 +227,7 @@ const Index = () => {
             <Target className="h-8 w-8 text-blue-600 mr-4" />
             <h2 className="text-4xl font-bold text-gray-900">🎯 Who Is This For?</h2>
           </div>
-          <p className="text-center text-gray-600 mb-16">🧠 Stop guessing. Start proving.</p>
+          <p className="text-center text-gray-600 mb-16">🧠 You've built real things. Now prove it — in USCIS language.</p>
           
           <div className="space-y-4 mb-12">
             {targetAudience.map((audience, index) => (
@@ -237,7 +240,7 @@ const Index = () => {
 
           <div className="text-center bg-blue-600 text-white rounded-xl p-8 shadow-lg">
             <p className="text-xl font-medium">
-              If you've built something real, we help you prove it — in USCIS language.
+              Whether you built the backend, scaled the product, ran the experiments, or designed the campaign — if it shipped, we help you prove it.
             </p>
           </div>
         </div>
