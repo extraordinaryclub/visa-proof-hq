@@ -139,12 +139,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-blue-600 text-white p-4 shadow-lg z-40 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 bg-primary text-primary-foreground p-4 shadow-lg z-40 md:hidden">
         <div className="flex items-center justify-between max-w-sm mx-auto">
           <span className="font-semibold">Ready to get started?</span>
-          <Button size="sm" className="bg-white text-blue-600 hover:bg-gray-100"
+          <Button size="sm" className="bg-primary-foreground text-primary hover:bg-muted"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
             Get Started – $299
           </Button>
@@ -162,81 +162,81 @@ const Index = () => {
       />
 
       {/* Navigation Header */}
-      <nav className="px-6 py-4 bg-white border-b border-gray-200 sticky top-0 z-50">
+      <nav className="px-6 py-4 bg-background border-b border-border sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-blue-600">🚀</div>
-            <span className="text-xl font-bold text-gray-900">Extraordinary Club</span>
+            <div className="text-2xl font-bold text-primary">🚀</div>
+            <span className="text-xl font-bold text-foreground">Extraordinary Club</span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium">
+            <Link href="/" className="text-muted-foreground hover:text-primary font-medium">
               Home
             </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-blue-600 font-medium">
+            <Link href="/blog" className="text-muted-foreground hover:text-primary font-medium">
               Blog
             </Link>
-            <a href="#pricing" className="text-gray-700 hover:text-blue-600 font-medium cursor-pointer">
+            <a href="#pricing" className="text-muted-foreground hover:text-primary font-medium cursor-pointer">
               Pricing
             </a>
-            <Button size="sm" className="bg-blue-600 hover:bg-blue-700"
+            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground"
                     onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started – $299
             </Button>
           </div>
-          <Button variant="ghost" size="sm" className="md:hidden">
+          <Button variant="ghost" size="sm" className="md:hidden text-foreground">
             <Menu className="h-5 w-5" />
           </Button>
         </div>
       </nav>
       {/* Hero Section */}
-      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-blue-50 to-white">
+      <section className="px-6 py-20 max-w-6xl mx-auto text-center bg-gradient-to-b from-background to-muted">
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
-            🚀 Prove you're <span className="text-blue-600">extraordinary.</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6 tracking-tight leading-tight">
+            🚀 Prove you're <span className="text-primary">extraordinary.</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-4">
             Join the visa accelerator for founders, makers, and researchers.<br />
             Judging invites, press features, LORs — you participate, we organize.
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 shadow-lg"
+          <Button size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 shadow-lg"
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
             Get Started – from $299
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-blue-600 text-blue-600 hover:bg-blue-50"
+          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-primary text-primary hover:bg-muted"
                   onClick={() => window.open('https://calendly.com/extraordinaryclub', '_blank')}>
             Schedule a Call
           </Button>
         </div>
-        <p className="text-sm text-gray-500 mt-6">✅ You don't need a lawyer yet. You need proof.</p>
+        <p className="text-sm text-muted-foreground mt-6">✅ You don't need a lawyer yet. You need proof.</p>
       </section>
 
       {/* Gradient Divider */}
-      <div className="h-2 bg-gradient-to-r from-blue-100 via-yellow-100 to-green-100"></div>
+      <div className="h-2 bg-gradient-to-r from-primary via-foreground to-accent"></div>
 
       {/* How It Works */}
-      <section className="px-6 py-20 bg-gray-50 how-it-works">
+      <section className="px-6 py-20 bg-muted how-it-works">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
             🛠️ How It Works
           </h2>
-          <p className="text-center text-gray-600 mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
+          <p className="text-center text-muted-foreground mb-16">🎯 USCIS wants evidence. You'll walk away with it.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
+              <div key={index} className="text-center bg-card rounded-xl p-6 shadow-sm border border-border">
+                <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                   {index + 1}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                <h3 className="text-xl font-semibold mb-2 text-card-foreground">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-muted-foreground mb-4">
                   {step.description}
                 </p>
-                <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-                  <p className="text-sm font-medium text-green-800">
+                <div className="bg-secondary border border-border rounded-lg p-3">
+                  <p className="text-sm font-medium text-secondary-foreground">
                     ✅ {step.criteria}
                   </p>
                 </div>
